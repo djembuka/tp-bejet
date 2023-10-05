@@ -1,0 +1,170 @@
+//begin catalog.element component
+
+link( rel="stylesheet", href="/components/catalog.element/style.css" )
+
+.b-catalog-element
+
+  .b-tabs
+    .b-container
+    
+      include ../../modules/tabs/include.jade
+    
+      hr.i-size-L
+        
+    .b-tabs__i( data-tab="advantages" )
+        
+      include advantages
+      
+    .b-container
+      .b-tabs__i.i-active( data-tab="review" )
+      
+        include ../../modules/video-container/include.jade
+        
+        hr
+        
+        p Готовый интернет-магазин Seller — хорошее решение для быстрого запуска интернет-магазина модной одежды или аксессуаров. 
+        h2 Адаптивная верстка 
+        p Интернет-магазин одежды Seller создан с учетом мульти-платформенного использования. Это значит, что независимо от того, какое устройство используют ваши посетители: персональный компьютер, планшет или смартфон, ваш магазин будет отображать информацию максимально удобно и сохранит все функциональные возможности. 
+        h2 Маркетинговые возможности 
+        p Для эффективной работы с посетителями сайта вы сможете использовать самые разные инструменты: 
+        ul
+          li Баннеры;
+          li Рекомендации;
+          li Новинки;
+          li Хиты продаж;
+          li Акции;
+          li Подписки;
+          li Комментарии;
+          li Оценки. 
+        h2 Поиск по сайту 
+        p Seller предлагает несколько способов навигации по сайту, настроив которые, вы сможете показывать вашим клиентам максимально точные предложения. 
+        ul
+          li Морфологический поиск;
+          li Тэги;
+          li Каталог по типу продукции;
+          li Каталог по брендам;
+          li Фильтр по параметрам;
+          li Сортировка каталога. 
+        h2 Информация для покупателя 
+        p Корпоративные разделы помогут рассказать вашим покупателям главные принципы работы и условия покупки. А также обеспечат дополнительную информационную поддержку. 
+        ul
+          li О магазине;
+          li Новости;
+          li Контакты;
+          li Вакансии;
+          li Как купить;
+          li Оплата;
+          li Доставка;
+          li Гарантия. 
+        h2 Корпоративные разделы 
+        ul
+          li О магазине;
+          li Вакансии;
+          li Статьи. 
+          
+      .b-tabs__i( data-tab="installation" )
+        h2 Установка
+        p Очень простая установка одной кнопкой.
+        
+      .b-tabs__i( data-tab="packaging" )
+        h2 Комплектация c редакциями 1С-Битрикс 
+        
+        table.b-table
+          thead
+            tr
+              th
+              th 1С-Битрикс:<br>Малый Бизнес
+              th 1С-Битрикс:<br>Бизнес
+          tbody
+            - var i = 2
+            while i > 0
+              - i--
+              tr
+                th( colspan="3" )
+                  b Основные функции
+              tr
+                th Каталог товаров
+                td
+                  i
+                td
+                  i 
+              tr
+                th Торговые предложения
+                td
+                td
+                  i
+              tr
+                th Импорт каталога товаров из 1С, Excel или CSV
+                td
+                  i
+                td
+                  i
+          
+      .b-tabs__i( data-tab="price_table" )
+        h2.w_m Варианты покупки
+        .price_table
+          .column
+            div
+              .cell
+                p Только Маркет
+              .cell
+                | 19 900 
+                sup руб
+              .cell(style='height: 308px;')
+                ul
+                  li Маркет — адаптивный интернет-магазин
+              .cell
+                a.b-button.i-scheme-2(href='/personal/cart/add2backet.php?nabor=1&order[]=59') Купить
+          .column
+            div
+              .cell
+                p Небольшой магазин и хостинг свой
+              .cell
+                | 55 800 
+                sup руб
+              .cell(style='height: 308px;')
+                ul
+                  li Маркет — адаптивный интернет-магазин
+                  li Лицензия «1С-Битрикс: Управление сайтом — Малый бизнес»
+                  li Бесплатная установка
+              .cell
+                a.b-button.i-scheme-2(href='/personal/cart/add2backet.php?nabor=1&order[]=59&order[]=8&order[]=38') Купить
+          .column
+            div
+              .cell
+                p Ваш первый интернет-магазин
+              .cell
+                | 57 650 
+                sup руб
+              .cell(style='height: 308px;')
+                ul
+                  li Маркет — адаптивный интернет-магазин
+                  li Лицензия «1С-Битрикс: Управление сайтом — Малый бизнес»
+                  li Хостинг на 1 месяц — 10 Гб
+                  li Домен .RU
+                  li Бесплатная установка
+              .cell
+                a.b-button.i-scheme-2(href='/personal/cart/add2backet.php?nabor=1&order[]=59&order[]=8&order[]=89&order[]=16&order[]=38') Купить
+        
+        hr
+        
+        include ../../modules/solution-options/lite.jade
+            
+      //-hr.i-size-L
+      
+      //-h2.w_m Выберите свою комплектацию 
+  
+      //-include ../../modules/solution-options/lite.jade
+    
+  hr.i-size-L
+    
+  .b-ce__banner
+    .b-container
+      .b-row
+        .b-col-sm-6.b-ce__banner__text
+          h3
+            span Готовый интернет-магазин одежды Seller
+        .b-col-sm-6.b-ce__banner__button
+          include ../../modules/button/question.jade
+      
+//end catalog.element component

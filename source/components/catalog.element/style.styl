@@ -1,0 +1,157 @@
+@import '../../styl/component-include.styl'
+
+.b-ce
+  
+  &__banner
+    background-color $dark-grey
+    padding 28px 0
+    
+    @media ( max-width: $media-width1 )
+      text-align center
+    
+    &__text
+      
+      h3
+        margin 0
+        color #fff
+        font-size 10.5pt
+        font-weight bold
+        line-height 50px
+          
+        span
+          display inline-block
+          vertical-align middle
+          line-height 1.4
+      
+    
+    &__button
+      text-align right
+    
+      @media ( max-width: $media-width1 )
+        text-align center
+      
+      .b-button
+        background-color $brand-color
+        
+.b-table
+  width 100%
+  
+  th,
+  td
+    height 60px
+    font-size 10.5pt
+    color $lightest-grey
+    border-bottom 1px solid $dark-grey
+    vertical-align middle
+    text-align center
+    line-height 18px
+    padding 0 14px
+    
+  th
+    text-align left
+    font-weight normal
+    
+  td
+    width 30%
+    
+  b
+    color #fff
+    
+  i
+    width 12px
+    height 12px
+    display inline-block
+    background embedurl( 'img/i.png' ) no-repeat 0 0
+  
+  thead
+    th
+      background $dark-grey
+      color $lightest-grey
+      font-size 8pt
+      text-align center
+      border-top 0
+  
+.fotorama
+  @media (max-width: 720px)
+    margin-right -20px
+    margin-left -20px
+    
+//price block
+.w_m
+  color #ffffff
+  margin-bottom 45px
+
+.price_table
+  text-align center
+  border 1px solid #494949
+  & + .price_table
+    margin-top 30px
+  .column
+    float left
+    width 33.23%
+    & > div
+      padding 0px 27px 29px 27px
+    & + .column
+      border-left 1px solid #494949
+    .cell
+      & > .b-button
+        width 100%
+      &:nth-child(1)
+        height 80px
+        color #cccccc
+        font-weight bold
+        display flex
+        & > p
+          margin auto
+      &:nth-child(2)
+        height 105px
+        line-height 105px
+        vertical-align middle
+        color #ffffff
+        font-weight bold
+        font-size 24px
+      &:nth-child(3)
+        padding-top 25px
+        color #cccccc
+        padding-bottom 25px
+      & > ul
+        margin 0px
+        padding 0px
+        & > li
+          list-style none
+          & + li
+            margin-top 15px
+  &:after
+    content " "
+    display block
+    width 100%
+    clear both
+    height 0
+    overflow hidden
+
+.price_table .column .cell:nth-child(1),
+.price_table .column .cell:nth-child(2)
+  border-bottom 1px solid #494949
+
+  .price_table
+    .column
+      .cell
+        sup
+          font-size 60%
+
+@media (max-width: 768px)
+  .b-container
+    width auto
+  .w_m
+    text-align center
+    margin-bottom 25px
+    margin-top -10px
+  .price_table
+    .column
+      width 100%
+      & > div
+        padding 0px 23px 29px 23px
+      & + .column
+        border-left none
+        border-top 1px solid #494949
+

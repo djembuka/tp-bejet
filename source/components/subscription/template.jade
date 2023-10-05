@@ -1,0 +1,45 @@
+﻿// start /components/subscription/
+
+link( rel="stylesheet", href="/components/subscription/style.css" )
+script( src="/template/cookie.js" )
+script( src="/components/subscription/script.js" )
+
+.b-subscription
+  form( action="/components/subscription/send.json" method="GET" )
+    fieldset
+      h2 Подписка
+      hr
+      p Обзоры обновлений, новинки маркетплейса, сравнения и рецензии на решения, скидки.
+      include ../../modules/float-input/email.jade
+      
+    hr.i-size-L
+    
+    .b-form-submit
+      include ../../modules/button/subscribe.jade
+      
+  fieldset.b-message
+    h3 Ваш запрос на подписку принят
+    hr
+    p Пожалуйста проверьте вашу почту, чтобы подтвердить вашу подписку.
+    p Спасибо!
+    
+.b-subscription.i-white
+  form( action="/components/subscription/error.json" method="GET" )
+    fieldset
+      h2 Подписка
+      hr
+      p Обзоры обновлений, новинки маркетплейса, сравнения и рецензии на решения, скидки.
+      include ../../modules/float-input/email.jade
+      
+    hr.i-size-L
+    
+    .b-form-submit
+      include ../../modules/button/subscribe.jade
+      
+  fieldset.b-message
+    h3 Ваш запрос на подписку принят
+    hr
+    p Пожалуйста проверьте вашу почту, чтобы подтвердить вашу подписку.
+    p Спасибо!
+      
+// end /components/subscription/

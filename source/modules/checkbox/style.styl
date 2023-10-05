@@ -1,0 +1,42 @@
+@import '../../styl/component-include.styl'
+
+.b-checkbox
+  display block
+  margin-bottom 9px
+  cursor default
+  
+  .b-col-sm-6 > &
+    margin-bottom 0
+    
+    .b-checkbox__icon
+      margin-right 15px
+  
+  &__icon
+    content " "
+    ib()
+    background embedurl( 'img/checked.png' ) no-repeat 0 0
+    width 20px
+    height 20px
+    margin-right 40px
+    line-height 20px
+    
+    .b-checkbox.i-unchecked &
+      background-image embedurl( 'img/unchecked.png' )
+    
+    .b-checkbox.i-warning &
+      background-image embedurl( 'img/warning.png' )
+    
+  &__input
+    display none
+    
+  &__text
+    ib()
+    color $brand-color
+    line-height 20px
+    
+    .b-checkbox.i-unchecked &
+      color #fff
+  
+    .b-checkbox.i-warning &
+      color $warning-color
+    

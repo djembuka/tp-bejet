@@ -1,0 +1,65 @@
+@import '../../styl/component-include.styl'
+
+.b-card
+  border 1px solid #494949
+  padding 15px 20px 7px
+  text-align center
+  position relative
+  
+  &.i-sale
+    border-color $brand-color
+    
+    &:before
+      display block
+      content '%'
+      position absolute
+      top -14px
+      right -14px
+      background-color $brand-color
+      border-radius 51%
+      width 29px
+      height 29px
+      text-align center
+      line-height 29px
+      font-size 11pt
+      color $middle-grey
+      
+    .b-price
+      color $brand-color
+  
+  &-title
+    margin 0 0 25px
+    
+  .b-price
+    font-size 17pt
+   
+    sup
+      font-size 10pt
+      line-height 24pt
+  
+  &-block
+    border-bottom 1px solid #494949
+    padding 22px 0
+    line-height 30px
+    
+    &:last-child
+      border-bottom none
+      
+    &.i-note
+      color #a0a0a0
+      text-align left
+      padding 30px 20px 30px 40px
+      font-size 9pt
+      line-height 20px
+      position relative
+      
+      &:before
+        content '*'
+        position absolute
+        top 20px
+        left 20px
+        font-size 16pt
+      
+  .b-button
+    min-width 196px
+    margin-top 8px

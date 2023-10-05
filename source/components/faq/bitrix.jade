@@ -1,0 +1,42 @@
+﻿// start /components/faq/
+
+link( rel="stylesheet", href="/components/faq/style.css" )
+script( src="/components/faq/script.js" )
+
+.b-faq.i-bitrix
+  
+  .b-faq-block
+  
+    .b-faq-item.i-sale
+      .b-faq-question
+        a.collapsed( href='#panel-1', data-toggle='collapse' ) 1С-Битрикс: Старт
+        .b-faq-info
+          .b-price.i-old 5 590
+            sup руб.
+          .b-price 4 590
+            sup руб.
+        include ../../modules/button/buy-card
+      .b-faq-answer#panel-1.collapse( data-toggle='collapse' )
+        .b-faq-answer__text
+          .b-faq-answer__wrapper
+            p Тем же, чем отличается костюм купленный в магазине от костюма сшитого в ателье на заказ. При покупке в магазине вам предлагают готовый ассортимент, а не снимаю индивидуальные мерки.
+        .b-faq-answer__close
+          a( href='#panel-1', data-toggle='collapse' ) Скрыть описание
+          
+    .b-faq-item
+      .b-faq-question
+        a.collapsed( href='#panel-2', data-toggle='collapse' ) 1С-Битрикс: Малый бизнес
+        .b-faq-info
+          .b-price 4 590
+            sup руб.
+        include ../../modules/button/buy-card
+      .b-faq-answer#panel-2.collapse( data-toggle='collapse' )
+        .b-faq-answer__text
+          .b-faq-answer__wrapper
+            p Тем же, чем отличается костюм купленный в магазине от костюма сшитого в ателье на заказ. При покупке в магазине вам предлагают готовый ассортимент, а не снимаю индивидуальные мерки.
+        .b-faq-answer__close
+          a( href='#panel-2', data-toggle='collapse' ) Скрыть описание
+          
+  hr.i-size-L
+
+// end /components/faq/

@@ -1,0 +1,93 @@
+@import '../../styl/component-include.styl'
+
+.i-popup-active body
+  transform( scale( 0.9 ) )
+  
+.b-popup
+  position absolute
+  left 50%
+  top 100px
+  visibility hidden
+  opacity(0)
+  margin-left -350px
+  z-index 1000
+  transform( scale( 0.8 ) )
+  
+  @media (max-width: 720px)
+    display none
+
+  @media (min-width: $media-width1)
+    margin-left devide( mult( -1, $content-width1 ), 2 )
+
+  @media (min-width: $media-width2)
+    margin-left devide( mult( -1, $content-width2 ), 2 )
+
+  @media (min-width: $media-width3)
+    margin-left devide( mult( -1, $content-width3 ), 2 )
+    
+  &-cover
+    position absolute
+    width 100%
+    height 100%
+    top 0
+    left 0
+    z-index 1
+    visibility hidden
+    opacity(0)
+    background rgba( 0, 0, 0, 0.5 )
+
+    .i-popup-active &
+      visibility visible
+      opacity(1)
+  
+  &__content
+    padding 35px 40px
+    background-color $dark-grey
+    color #fff
+    box-shadow( 0px 0px 20px rgba( 0, 0, 0, 0.6 ) )
+    border-radius( 3px )
+    
+    .b-h1
+      text-align center
+      margin 0 0 30px
+    
+  &__button
+    text-align center
+    
+  .b-button
+    width 225px
+    
+  &__close
+    position absolute
+    top 20px
+    right 23px
+    font-size 8pt
+    
+
+.i-popup-active .avgrund-contents
+  filter( blur(2px) )
+
+.no-blur.i-popup-active .avgrund-contents
+  filter( none )
+
+.i-popup-active .b-popup
+  visibility: visible
+  opacity(1)
+  transform( scale( 1.1 ) )
+  
+.b-popup.stack
+  transform( scale( 1.5 ) )
+
+.i-popup-active .b-popup.stack
+  transform( scale( 1.1 ) )
+  
+.i-popup-ready
+  body,
+  .avgrund-contents,
+  .b-popup,
+  .b-popup-cover
+    transform-origin( 50% 10% )
+    transition( 0.3s all cubic-bezier(0.250, 0.460, 0.450, 0.940) )
+  
+  .b-popup.i-no-transition
+    transition( none )

@@ -1,0 +1,56 @@
+﻿doctype html
+html
+  head
+    title
+      block title
+        |Bejet
+    meta( charset="utf-8" )
+    meta( name="keywords", content="")
+    meta( name="description", content="")
+    meta( name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" )
+    link(
+      rel="stylesheet",
+      href="/template/jquery-ui.min.css"
+    )
+    link(
+      rel="stylesheet",
+      href="/template/template_styles.css"
+    )
+    link(
+      href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic'
+      rel='stylesheet'
+    )
+    script( src="/template/jquery.js" )
+    script( src="/template/jquery-ui.min.js" )
+    script( src="/template/jscript.js" )
+    
+  body
+  
+    header.b-header
+      .b-container
+        
+        .b-header__logo
+          a( href="/" )
+            img(
+              src="/template/images/bejet-logo.png",
+              alt=""
+            )
+          
+        hr.visible-xs
+          
+        .b-header__heading
+          h5 Вы смотрите демо
+          h3 Аспро. Интернет-магазин
+          
+        nav.b-header-nav
+          a.b-header-nav__i( href="/solution/?tab=review" ) Описание
+          a.b-header-nav__i( href="/solution/?tab=price_table" ) Цены
+          include ../modules/button/buy-simple.jade
+          include ../modules/popup/include.jade
+    
+    block content
+    
+      section.b-container.b-content
+        h1 Bejet
+        p.b-large-text Bejet — компания предлагающая на Российском рынке новый сегмент веб-предложений для бизнеса — тиражные решения. 
+        p.b-large-text Легко устанавливаемые и уже готовые для использования решения направлены на быстрый запуск веб-проекта и минимизацию рисков. Первым решением компании стал «Готовый сайт компании ©» созданный и запущенный в продажу в начале 2010 года.

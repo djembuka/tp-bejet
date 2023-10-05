@@ -1,0 +1,80 @@
+rel()
+  position relative
+
+abs( $top = 0, $left = 0 )
+  position absolute
+  top $top
+  left $left
+
+clearfix()
+  &:before
+  &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+
+ib()
+  display inline-block
+  vertical-align top
+
+after()
+  &:after
+    clear both
+    content "."
+    display block
+    height 0
+    visibility hidden
+
+box-sizing( box )
+  -webkit-box-sizing box
+  -moz-box-sizing box
+  box-sizing box
+
+border-radius(n)
+  -webkit-border-radius n
+  -moz-border-radius n
+  border-radius n
+
+box-shadow(n)
+  -webkit-box-shadow n
+  -moz-box-shadow n
+  box-shadow n
+
+filter(n)
+  -webkit-filter n
+  -moz-filter n
+  filter n
+
+transition( val )
+  transition val
+  -webkit-transition val
+  -moz-transition val
+  -ms-transition val
+  
+transform-origin( val )
+  -webkit-transform-origin val
+  -moz-transform-origin val
+  -ms-transform-origin val
+  transform-origin val
+  
+transform( val )
+  transform val
+  -webkit-transform val
+  -moz-transform val
+  -ms-transform val
+  
+opacity( val )
+  opacity val
+  -webkit-opacity val
+  -moz-opacity val
+  
+animation( val )
+  animation val
+  -webkit-animation val
+  -moz-animation val
+
+animation-fill-mode( val )
+  animation-fill-mode val
+  -moz-animation-fill-mode val
+  -webkit-animation-fill-mode val

@@ -1,0 +1,24 @@
+﻿// start /components/form.auth/
+
+section.b-container.b-content
+  h1.i-center Новый пароль
+  
+  hr
+  
+  form( action="/", method="get" )
+    
+    fieldset
+      .b-fieldset-content
+        p На ваш email, будет отправлена инструкция, как восстановить доступ в ваш личный кабинет.
+        
+        include ../../modules/float-input/password-new.jade
+        hr
+        include ../../modules/float-input/password-new-confirm.jade
+    
+    hr.i-size-L
+    
+    .b-form-submit
+      include ../../modules/button/save.jade
+        
+
+// end /components/form.auth/

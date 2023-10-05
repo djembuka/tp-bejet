@@ -1,0 +1,1 @@
+!function(a){"use strict";a(function(){a(".b-catalog-basket .b-solution-options").on("so:calculate",function(b,c){var d=a(b.target),e=d.closest(".b-catalog-basket"),f=e.find(".b-form-submit .b-button");0==+c?f.addClass("i-disabled"):f.removeClass("i-disabled")})})}(jQuery);

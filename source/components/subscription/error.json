@@ -1,0 +1,4 @@
+﻿{
+  "STATUS": "E",
+  "MESSAGE": "<h2>Ошибка<\/h2><hr><p>Неверный логин или пароль.<\/p><p class=\"center\"><a href=\"#\" class=\"b-subscription__send-again\">Отправить снова</a><\/p>"
+}

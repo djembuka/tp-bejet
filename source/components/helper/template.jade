@@ -1,0 +1,45 @@
+﻿// start /components/helper/
+
+link( rel="stylesheet", href="/components/helper/style.css" )
+script( src="/components/helper/script.js" )
+
+h1 Подбор готового веб-сайта
+hr.i-size-L
+
+.b-helper
+  .b-helper-tabs
+    nav
+      span.i-active( data-tab="choice" ) Выбор решения
+      span( data-tab="themes" ) Выбор тематики
+      span( data-tab="colors" ) Цветовая схема
+      span( data-tab="modules" ) Модули
+      
+  .b-helper-body( data-action="/components/helper/ajax.json" data-method="GET" )
+  
+    form( action="" method="GET" )
+  
+      .b-helper-tab.i-active( data-tab="choice" )
+        include choice-tab
+    
+      .b-helper-tab( data-tab="themes" )
+        include themes-tab
+    
+      .b-helper-tab( data-tab="colors" )
+        include colors-tab
+    
+      .b-helper-tab( data-tab="modules" )
+        include modules-tab
+      
+                
+      .b-helper-fieldset
+        hr.i-size-M
+        .row
+          .col-sm-6
+            p Вашим критериям соответствуют<br>
+              b <span id="helperCount">14</span> <span id="helperCountUnit">решений</span> — <a href="http://www.site.com" id="helperLink">посмотрим?</a><a href="http://www.site.com" id="helperLinkAlt">другой текст.</a>
+          .col-sm-6.text-right
+            include ../../modules/button/disabled/further
+            include ../../modules/button/save
+        
+
+// end /components/helper/

@@ -1,0 +1,48 @@
+﻿// start /components/catalog.basket/
+
+link( rel="stylesheet", href="/components/catalog.basket.confirmation/style.css" )
+script( src="/components/catalog.basket.confirmation/script.js" )
+
+.b-catalog-basket-confirmation.i-layer
+  h1 Заказ сформирован
+
+  .row
+
+    .col-lg-5.col-md-5
+
+      .b-catalog-basket-confirmation__payment
+        div
+          .h6 К оплате
+          b 4 459 руб.
+        div
+          .h6 Тип оплаты
+          b Банковская карта
+
+      p Оплата банковской картой, Apple Pay, Android Pay или еще какая-нибудь.
+
+      -var text = "Оплатить"
+      -var href = ""
+      include ../../modules/button/layouts/scheme-2.jade
+
+    hr.hidden.visible-sm-block.visible-xs-block.i-size-M
+
+    .col-lg-5.col-lg-offset-2.col-md-6.col-md-offset-1
+
+      .b-catalog-basket-confirmation__info
+        div
+          .h6 Номер заказа
+          b 141
+        div
+          .h6 Дата заказа
+          b 12.01.1987
+          i 13:09
+        div
+          .h6 Номер оплаты
+          b 127/1
+  
+      p Вы можете следить за выполнением своего заказа в 
+        a( href="" ) Персональном&nbsp;разделе&nbsp;сайта
+        | .
+      
+      -var text = "Личный кабинет"
+      include ../../modules/button/layouts/default.jade

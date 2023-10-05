@@ -1,0 +1,423 @@
+body
+  background: $bg-color
+  color: $text-color
+  font-family 'Open Sans', Verdana, Arial, sans-serif
+  font-size 11pt
+  line-height 1.7
+  
+a
+  color #97a76c
+  text-decoration none
+  transition( color 0.3s ease )
+  
+  &:hover
+    color: $brand-color
+    text-decoration underline
+
+.b-large-text
+  font-size 13.5pt
+  
+.i-xlarge-text
+  font-size 19pt
+  
+.i-small-text
+  font-size 9pt
+  
+.i-thin-text
+  font-weight 300
+  
+.i-white
+  color #fff
+  
+.i-gray
+  color $light-grey
+  
+.i-dark-bg
+  background-color $dark-grey
+    
+menu
+  margin 0 0 45px
+  padding 0
+  
+  li
+    list-style-type none
+    margin 0 0 10px
+  
+h1,
+.b-h1
+  margin 0 0 20px
+  line-height 1.2
+  font-size 20pt
+  font-weight bold
+  color #fff
+  
+  @media (max-width: 720px)
+      font-size 13.5pt
+  
+.i-center
+    text-align center
+    color #fff
+    
+.i-layer
+  background-color $dark-grey
+  margin 0 -55px
+  padding 60px 55px 65px
+
+  @media( max-width 720px )
+    margin 0 -15px
+    padding 60px 15px 65px
+  
+.b-h1-link
+  padding-top 7px
+  
+  @media (max-width: 767px)
+    padding-top 0
+    margin-top -1px
+  
+h2,
+.b-h2
+  font-size 13.5pt
+  font-weight bold
+  margin 30px 0 15px
+  line-height 1.2
+  
+h3
+  font-size 10.5pt
+  font-weight bold
+  margin 30px 0 15px
+  
+h4
+  font-weight normal
+  font-size 10.5pt
+  color $grey
+  
+h5
+  font-weight normal
+  font-size 8.5pt
+  color $light-grey
+  
+hr
+  border 0
+  height 1px
+  padding 0
+  margin 10px 0
+  
+  &.i-size-XL
+    margin 60px 0
+  
+  &.i-size-L
+    margin 20px 0
+  
+  &.i-size-M
+    margin 15px 0
+    
+  &.i-line
+    background-color #494949
+    
+p
+  margin 15px 0
+  
+  &:first-child
+    margin-top 0
+
+ul,
+ol
+  margin 15px 0 15px 15px
+  
+  @media (max-width: 720px)
+    padding-left 0
+  
+li
+  margin 15px
+  
+iframe
+  display block
+  margin 0
+  padding 0
+
+@import 'forms.styl'
+
+.i-align-right
+  text-align right
+
+.i-new-win
+  background embedurl('img/new-win.gif') no-repeat 0 center
+  padding-left 44px
+  
+.bsmall-table
+  width:100%
+  
+.bsmall-table
+
+  th,
+  td
+    height 60px
+    font-size:9pt
+    color:#ccc
+    border-bottom 1px solid #444
+    border-top 1px solid #444
+    vertical-align middle
+    line-height 18px
+    padding 0 14px
+  
+.bx-core-window th, .bx-core-window td
+  border-bottom none
+  border-top none
+  
+.visible-xs
+  display none
+  
+  @media (max-width: 370px)
+    display block
+    clear both
+
+    table.visible-xs
+      display table!important
+
+    tr.visible-xs
+      display table-row!important
+
+    td.visible-xs,th.visible-xs
+      display table-cell!important
+    
+.fotorama
+
+  img
+    width 100%
+  
+  /*&__nav
+    &--dots &__frame
+      width 22px !important
+    
+  &__dot
+    ib()
+    width 10px !important
+    height 10px !important
+    border-radius( 5px ) !important
+    background-color $dark-grey !important
+    border 0 !important
+    transition( background-color 0.3s ease )
+    
+    .fotorama__nav__frame.fotorama__active &
+      background-color $brand-color !important*/
+      
+//visible-hidden
+.hide
+  display none!important
+
+.show 
+  display block!important
+
+.invisible 
+  visibility hidden
+
+.text-hide
+  font 0/0 a;
+  color transparent;
+  text-shadow none;
+  background-color transparent;
+  border 0
+
+
+.hidden
+  display none!important
+
+
+.affix
+  position fixed
+
+
+@-ms-viewport
+  width device-width
+
+
+.visible-lg-block, .visible-lg-inline, .visible-lg-inline-block, .visible-md-block, .visible-md-inline, .visible-md-inline-block, .visible-sm-block, .visible-sm-inline, .visible-sm-inline-block, .visible-xs-block, .visible-xs-inline, .visible-xs-inline-block
+  display none!important
+
+@media (max-width: 767px)
+
+  .visible-xs-block
+    display block!important
+
+  .visible-xs-inline
+    display inline!important
+
+  .visible-xs-inline-block
+    display inline-block!important
+
+@media (min-width: 768px) and (max-width:991px)
+  .visible-sm
+    display block!important
+
+  table.visible-sm
+    display table!important
+
+  tr.visible-sm
+    display table-row!important
+
+  td.visible-sm,th.visible-sm
+    display table-cell!important
+
+  .visible-sm-block
+    display block!important
+
+  .visible-sm-inline
+    display inline!important
+
+  .visible-sm-inline-block
+    display inline-block!important
+
+@media (min-width: 992px) and (max-width:1199px)
+  .visible-md
+    display block!important
+
+  table.visible-md
+    display table!important
+
+  tr.visible-md
+    display table-row!important
+
+  td.visible-md,th.visible-md
+    display table-cell!important
+
+  .visible-md-block
+    display block!important
+  
+
+  .visible-md-inline
+    display inline!important
+
+  .visible-md-inline-block
+    display inline-block!important
+
+
+@media (min-width: 1200px)
+  .visible-lg
+    display block!important
+
+  table.visible-lg
+    display table!important
+
+  tr.visible-lg
+    display table-row!important
+
+  td.visible-lg,th.visible-lg
+    display table-cell!important
+
+  .visible-lg-block
+    display block!important
+
+  .visible-lg-inline
+    display inline!important
+
+  .visible-lg-inline-block
+    display inline-block!important
+
+@media (max-width: 767px)
+  .hidden-xs
+    display none!important
+
+@media (min-width 768px) and (max-width:991px)
+  .hidden-sm
+    display none!important
+
+@media (min-width 992px) and (max-width:1199px)
+  .hidden-md
+    display none!important
+
+@media (min-width 1200px)
+  .hidden-lg
+    display none!important
+    
+.b-price
+  font-size 22pt
+  font-weight bold
+   
+  sup
+    font-size 17pt
+    line-height 24pt/*changeable*/
+    vertical-align top
+  
+.b-old-price
+  font-size 10.5pt
+   
+  sup
+    font-size 6pt
+    
+.b-travellers-promo-intro
+  padding-top 45px
+  
+  .b-h2
+    margin-top 0
+    
+  @media( max-width $media-width1 )
+    padding-top 0
+    
+.sale-paysystem-wrapper
+  padding 0
+  margin 0
+  border none
+  font 11pt 'Open Sans', Verdana, Arial, sans-serif
+  color $text-color
+  
+.sale-paysystem-yandex-button-item
+  line-height 38px !important
+  
+.sale-paysystem-yandex-button-descrition
+  line-height 38px
+  margin 26px 0
+  vertical-align top
+  
+.b-text-image
+
+  .row
+    margin-bottom 70px
+    
+    &:last-child
+      margin-bottom 0
+      
+    @media( max-width 767px )
+      margin-bottom 30px
+
+  &__image
+  
+    @media( max-width 767px )
+      margin-bottom 30px
+  
+    img
+      width calc( 100% + 15px )
+
+      @media( max-width 767px )
+        width 100%
+      
+  &__text
+    padding-top 70px
+    
+    &:first-child
+      padding-right 85px
+      
+      @media( max-width 767px )
+        padding-right 15px
+    
+    &:last-child
+      padding-left 85px
+      
+      @media( max-width 767px )
+        padding-left 15px
+      
+    @media( max-width 767px )
+      padding-top 0
+      
+  .col-sm-6:first-child
+    img
+      margin-right -15px
+      
+      @media( max-width 767px )
+        margin-right 0
+      
+  .col-sm-6:last-child
+    img
+      margin-left -15px
+      
+      @media( max-width 767px )
+        margin-left 0

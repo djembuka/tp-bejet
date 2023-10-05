@@ -1,0 +1,59 @@
+@import '../../styl/component-include.styl'
+
+/*.b-gallery
+  
+  &__i
+    float left
+    
+    img
+      width 100%
+      ib()
+      
+    &.i-scale {
+      transition( all 0.5s ease )
+      transform( scale( 0.5 ) )
+      opacity( 0.5 )
+    }
+  
+  &__images
+    overflow hidden
+    margin-bottom 25px
+  
+  &__belt
+    transition( margin 0.5s ease )
+    after()
+    
+  &__nav
+    text-align center
+    margin 0
+    padding 0
+    
+    &__i
+      ib()
+      width 10px
+      height 10px
+      border-radius( 5px )
+      background-color $dark-grey
+      margin 0 5px
+      transition( background-color 0.3s ease )
+      
+      &.i-active
+        background-color $brand-color*/
+
+.fotorama__arr--prev
+  background-image embedurl( 'img/left-arrow.svg' )
+  background-position center
+  background-repeat no-repeat
+  background-size cover
+
+.fotorama__arr--next
+  background-image embedurl( 'img/right-arrow.svg' )
+  background-position center
+  background-repeat no-repeat
+  background-size cover
+  
+.fotorama__fullscreen-icon
+  background-image embedurl( 'img/fullscreen.svg' )
+  background-position center
+  background-repeat no-repeat
+  background-size cover

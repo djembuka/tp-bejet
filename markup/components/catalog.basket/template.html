@@ -1,0 +1,95 @@
+
+<!-- start /components/catalog.basket/-->
+<link rel="stylesheet" href="/components/catalog.basket/style.css"/>
+<script src="/components/catalog.basket/script.js"></script>
+<div class="b-catalog-basket">
+  <h1>Оформление заказа</h1>
+  <hr/>
+  <form action="" method="get">
+    <fieldset>
+      <h2>Способ оплаты</h2>
+      <p>Выберите удобный Вам способ оплаты.</p>
+      <hr class="i-size-L"/>
+      <div class="b-pay-options">
+        <label class="b-po__i i-bank i-active">
+          <input type="radio" name="pay" value="bank"/><span class="b-po__icon i-bank"></span>Банковский<br/>счет
+        </label>
+        <label class="b-po__i i-card">
+          <input type="radio" name="pay" value="card"/><span class="b-po__icon"></span>Кредитная<br/>карта
+        </label>
+        <label class="b-po__i i-yandex">
+          <input type="radio" name="pay" value="yandex"/><span class="b-po__icon"></span>Яндекс<br/>деньги
+        </label>
+      </div>
+    </fieldset>
+    <hr/>
+    <fieldset>
+      <div class="b-license">
+        <h2>Владелец лицензии</h2>
+        <p>Для регистрации лицензий на программное обеспечение необходимо заполнить контактную информаацию о лице отвественном за использование программного обеспечения.</p>
+        <hr/>
+        <div class="b-form-field i-float">
+          <label class="b-label">Название компании</label>
+          <input type="text" name="company" value="" required="required" class="b-input-text"/><span class="b-asterisk">*</span>
+        </div>
+        <hr/>
+        <div class="b-form-field i-float">
+          <label class="b-label">Имя, фамилия, отчество</label>
+          <input type="text" name="name" value="" required="required" class="b-input-text"/><span class="b-asterisk">*</span>
+        </div>
+        <hr/>
+        <div class="b-form-field i-float">
+          <label class="b-label">Email</label>
+          <input type="email" name="email" value="" required="required" class="b-input-text"/><span class="b-asterisk">*</span>
+        </div>
+        <hr/>
+        <div class="b-form-field i-float">
+          <label class="b-label">Контактный телефон</label>
+          <input type="tel" name="tel" value="" required="required" class="b-input-text"/><span class="b-asterisk">*</span>
+        </div>
+      </div>
+    </fieldset>
+    <hr/>
+    <fieldset>
+      <h2>Комплектация</h2>
+      <hr class="i-size-M"/>
+      <div class="b-solution-options i-unselective">
+        <ul>
+          <li data-disabled="Эту позицию нельзя удалить из заказа." class="b-so__i">
+            <input type="checkbox" name="order[]" value="val1" checked="checked" class="b-so__checkbox"/>
+            <div class="b-so__name">Лицензия «Готовый интернет-магазин Seller»</div>
+            <div class="b-so__price"><span class="b-so__price-num">17 000</span><span class="b-so__price-unit">руб.</span></div>
+          </li>
+          <li class="b-so__i">
+            <input type="checkbox" name="order[]" value="val2" checked="checked" class="b-so__checkbox"/>
+            <div class="b-so__name">Лицензия Лицензия «1С-Битрикс: Управление сайтом»</div>
+            <div class="b-so__price"><span class="b-so__price-num">27 900</span><span class="b-so__price-unit">руб.</span></div>
+          </li>
+          <li class="b-so__i">
+            <input type="checkbox" name="order[]" value="val3" checked="checked" class="b-so__checkbox"/>
+            <div class="b-so__name">Хостинг 1 год (3 Гб)</div>
+            <div class="b-so__price"><span class="b-so__price-num">3 000</span><span class="b-so__price-unit">руб.</span></div>
+          </li>
+        </ul>
+        <hr class="i-size-L"/>
+        <div class="b-so__summ"><span class="b-so__summ-num">56 000</span><span class="b-so__summ-unit">руб.</span></div>
+      </div>
+    </fieldset>
+    <hr/>
+    <fieldset>
+      <h2>Лицензионное соглашение</h2>
+      <hr class="i-size-M"/>
+      <label class="b-checkbox"><span class="b-checkbox__icon"></span>
+        <input type="checkbox" name="checkbox[]" value="val" checked="checked" required="required" class="b-checkbox__input"/><a href="" target="_blank" class="b-checkbox__text">Лицензионное соглашение «Готовый интернет-магазин Seller»</a>
+      </label>
+      <label class="b-checkbox"><span class="b-checkbox__icon"></span>
+        <input type="checkbox" name="checkbox[]" value="val" checked="checked" required="required" class="b-checkbox__input"/><a href="" target="_blank" class="b-checkbox__text">Лицензионное соглашение «1С-Битрикс: Управление сайтом»</a>
+      </label>
+    </fieldset>
+    <hr class="i-size-L"/>
+    <div class="b-form-submit">
+      <button type="submit" class="b-button i-scheme-2">Оформить заказ</button>
+    </div>
+  </form>
+</div>
+<!-- end /components/catalog.basket/-->

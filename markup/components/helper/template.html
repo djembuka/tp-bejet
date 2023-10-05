@@ -1,0 +1,176 @@
+
+<!-- start /components/helper/-->
+<link rel="stylesheet" href="/components/helper/style.css"/>
+<script src="/components/helper/script.js"></script>
+<h1>Подбор готового веб-сайта</h1>
+<hr class="i-size-L"/>
+<div class="b-helper">
+  <div class="b-helper-tabs">
+    <nav><span data-tab="choice" class="i-active">Выбор решения</span><span data-tab="themes">Выбор тематики</span><span data-tab="colors">Цветовая схема</span><span data-tab="modules">Модули</span></nav>
+  </div>
+  <div data-action="/components/helper/ajax.json" data-method="GET" class="b-helper-body">
+    <form action="" method="GET">
+      <div data-tab="choice" class="b-helper-tab i-active">
+        <h2 class="text-center">Выбор решения</h2>
+        <p class="text-center">Ответьте на все вопросы помощника и о пдскажет, какие решения подходят для вас.</p>
+        <hr class="i-size-M"/>
+        <div class="b-helper-fieldset">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3>Для чего вам нужен сайт?</h3>
+              <p>Версия разделов оформления заказа</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="b-radio-anim">
+                <input id="radio1" type="radio" name="type1" value="0" checked="checked"/>
+                <label for="radio1">Разместить информацию о компании</label>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="b-radio-anim">
+                <input id="radio2" type="radio" name="type1" value="1"/>
+                <label for="radio2">Продавать услуги</label>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="b-radio-anim">
+                <input id="radio3" type="radio" name="type1" value="2"/>
+                <label for="radio3">Продавать товары</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-tab="themes" class="b-helper-tab">
+        <h2 class="text-center">Тематика веб-сайта</h2>
+        <p class="text-center">Ответьте на все вопросы помощника и о пдскажет, какие решения подходят для вас.</p>
+        <hr class="i-size-M"/>
+        <div class="b-helper-fieldset">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3>Версия разделов оформления заказа, версия разделов оформления заказа</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="b-checkbox-anim">
+                <input id="checkbox7" type="checkbox" name="type3[]" value="0" checked="checked"/>
+                <label for="checkbox7"><img src="/template/images/bg.gif"/><br/>Продавать услуги</label>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="b-checkbox-anim">
+                <input id="checkbox8" type="checkbox" name="type3[]" value="1"/>
+                <label for="checkbox8"><img src="/template/images/bg.gif"/><br/>Продавать услуги</label>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="b-checkbox-anim">
+                <input id="checkbox9" type="checkbox" name="type3[]" value="2"/>
+                <label for="checkbox9"><img src="/template/images/bg.gif"/><br/>Разместить информацию о компании</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="b-radio-anim">
+                <input id="radio4" type="radio" name="type5" value="0" checked="checked"/>
+                <label for="radio4"><img src="/template/images/bg.gif"/><br/>Продавать услуги</label>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="b-radio-anim">
+                <input id="radio5" type="radio" name="type5" value="1"/>
+                <label for="radio5"><img src="/template/images/bg.gif"/><br/>Продавать услуги</label>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="b-radio-anim">
+                <input id="radio6" type="radio" name="type5" value="2"/>
+                <label for="radio6"><img src="/template/images/bg.gif"/><br/>Разместить информацию о компании</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-tab="colors" class="b-helper-tab">
+        <h2 class="text-center">Цветовая схема</h2>
+        <p class="text-center">Ответьте на все вопросы помощника и о пдскажет, какие решения подходят для вас.</p>
+        <hr class="i-size-M"/>
+        <div class="b-helper-fieldset">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3>Версия разделов оформления заказа, версия разделов оформления заказа</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="b-checkbox-anim">
+                <input id="checkbox1" type="checkbox" name="type2[]" value="0" checked="checked"/>
+                <label for="checkbox1">Продавать товары</label>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="b-checkbox-anim">
+                <input id="checkbox2" type="checkbox" name="type2[]" value="1"/>
+                <label for="checkbox2">Разместить информацию о компании</label>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="b-checkbox-anim">
+                <input id="checkbox3" type="checkbox" name="type2[]" value="2"/>
+                <label for="checkbox3">Продавать услуги</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-tab="modules" class="b-helper-tab">
+        <h2 class="text-center">Модули</h2>
+        <p class="text-center">Ответьте на все вопросы помощника и о пдскажет, какие решения подходят для вас.</p>
+        <hr class="i-size-M"/>
+        <div class="b-helper-fieldset">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3>Версия разделов оформления заказа, версия разделов оформления заказа</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="b-checkbox-anim">
+                <input id="checkbox4" type="checkbox" name="type4[]" value="3"/>
+                <label for="checkbox4">Продавать товары</label>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="b-checkbox-anim">
+                <input id="checkbox5" type="checkbox" name="type4[]" value="4"/>
+                <label for="checkbox5">Разместить информацию о компании</label>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="b-checkbox-anim">
+                <input id="checkbox6" type="checkbox" name="type4[]" value="5"/>
+                <label for="checkbox6">Продавать услуги</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b-helper-fieldset">
+        <hr class="i-size-M"/>
+        <div class="row">
+          <div class="col-sm-6">
+            <p>Вашим критериям соответствуют<br><b><span id="helperCount">14</span> <span id="helperCountUnit">решений</span> — <a href="http://www.site.com" id="helperLink">посмотрим?</a><a href="http://www.site.com" id="helperLinkAlt">другой текст.</a></b></p>
+          </div>
+          <div class="col-sm-6 text-right"><a href="" class="b-button i-disabled">Далее</a>
+            <button type="submit" class="b-button i-scheme-2">Сохранить</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- end /components/helper/-->

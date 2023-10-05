@@ -1,0 +1,42 @@
+
+<!-- start /components/form.auth/-->
+<section class="b-container b-content">
+  <h1 class="i-center">Регистрация</h1>
+  <hr/>
+  <form action="/" method="get">
+    <fieldset>
+      <div class="b-fieldset-content">
+        <p>Для регистрации на сайте укажите данные, которые вам потребуются для покупки приложений.</p>
+        <div class="b-form-field i-float">
+          <label class="b-label">Email</label>
+          <input type="email" name="email" value="" required="required" class="b-input-text"/><span class="b-asterisk">*</span>
+        </div>
+        <hr/>
+        <div class="b-form-field i-float">
+          <label class="b-label">Пароль</label>
+          <input type="password" name="password" value="" required="required" data-equal="password" class="b-input-text"/>
+        </div>
+        <hr/>
+        <div class="b-form-field i-float">
+          <label class="b-label">Повторите пароль</label>
+          <input type="password" name="password" value="" required="required" data-equal="password" class="b-input-text"/>
+        </div>
+        <hr/>
+        <div class="b-form-field i-float">
+          <label class="b-label">Контактный телефон</label>
+          <input type="tel" name="tel" value="" required="required" class="b-input-text"/><span class="b-asterisk">*</span>
+        </div>
+        <hr/>
+        <div class="b-form-field i-float"><img src="/upload/capcha.jpg" alt="" class="b-capcha-img"/>
+          <label class="b-label">Код с картинки</label>
+          <input type="text" name="capcha" value="" required="required" class="b-input-text"/><span class="b-asterisk">*</span>
+        </div>
+      </div>
+    </fieldset>
+    <hr class="i-size-L"/>
+    <div class="b-form-submit">
+      <button type="submit" class="b-button i-scheme-2">Войти</button>
+    </div>
+  </form>
+</section>
+<!-- end /components/form.auth/-->

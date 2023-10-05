@@ -1,0 +1,66 @@
+﻿// start /components/faq/
+
+link( rel="stylesheet", href="/components/faq/style.css" )
+script( src="/components/faq/script.js" )
+
+h1 Ответы на часто задаваемые вопросы
+hr.i-size-L
+
+.b-faq
+
+  h2 Общие вопросы
+  p Вопросы на которые нам приходится отвечать чаще всего.
+  hr.i-size-L
+  
+  .b-faq-block
+  
+    .b-faq-item
+      .b-faq-question
+        a.collapsed( href='#panel-1', data-toggle='collapse' ) Чем отличается готовый сайт от разработки сайта?
+      .b-faq-answer#panel-1.collapse( data-toggle='collapse' )
+        .b-faq-answer__text
+          .b-faq-answer__wrapper
+            p Тем же, чем отличается костюм <a href="">купленный</a> в магазине от костюма сшитого в ателье на заказ. При покупке в магазине вам предлагают готовый ассортимент, а не снимаю индивидуальные мерки.
+        .b-faq-answer__close
+          a( href='#panel-1', data-toggle='collapse' ) Скрыть ответ
+          
+    .b-faq-item
+      .b-faq-question
+        a.collapsed( href='#panel-2', data-toggle='collapse' ) Вы продаете тоже самое, что и Маркетплейс
+          nobr 1С-Битрикс
+          | ?
+      .b-faq-answer#panel-2.collapse( data-toggle='collapse' )
+        .b-faq-answer__text
+          .b-faq-answer__wrapper
+            p Тем же, чем отличается костюм купленный в магазине от костюма сшитого в ателье на заказ. При покупке в магазине вам предлагают готовый ассортимент, а не снимаю индивидуальные мерки.
+        .b-faq-answer__close
+          a( href='#panel-2', data-toggle='collapse' ) Скрыть ответ
+          
+  hr.i-size-L
+  hr.i-size-L
+          
+  h2 Каталог решений
+  p Вопросы про решения представленные в нашем каталоге.
+  hr.i-size-L
+
+  .b-faq-block
+
+    .b-faq-item
+      .b-faq-question
+        a.collapsed( href='#panel-3', data-toggle='collapse' ) Решения — это шаблоны для сайта?
+      .b-faq-answer#panel-3.collapse( data-toggle='collapse' )
+        .b-faq-answer__text
+          .b-faq-answer__wrapper
+            p Не только шаблон.
+            p Решение — это и готовый шаблон 
+              nobr веб-сайта
+              |  и настроеные компоненты выполняющие различные функции инетрефейса: почтовые формы, вывод новостей, корзина 
+              nobr интернет-магазина
+              |  и многое другое.
+            p Решение — это полностью готовый 
+              nobr веб-сайт
+              |  с демонстрационными текстами и картинками.
+        .b-faq-answer__close
+          a( href='#panel-3', data-toggle='collapse' ) Скрыть ответ
+
+// end /components/faq/

@@ -1,0 +1,88 @@
+@import '../../styl/component-include.styl'
+
+.b-top-banner
+  text-align center
+  color #fff
+  line-height 1.4
+  
+  a
+    color: #fff
+  
+    &:hover
+      color: $brand-color
+    
+    &.b-button,
+    &.b-button:hover
+      color #fff
+      
+  .b-button
+    margin-right 10px
+    margin-left 10px
+    margin-bottom 5px
+    
+    @media (max-width: 720px)
+      margin-bottom 15px
+  
+  &__heading
+    font-size 20pt
+    font-weight bold
+    background-color $dark-grey
+    padding 22px 0 28px
+    position relative
+    
+    @media (max-width: 720px)
+      font-size 13.5pt
+    
+    a
+      text-decoration underline
+      
+  &__pointer
+    position absolute
+    bottom -9px
+    left 50%
+    margin-left -9px
+    width 17px
+    height 9px
+    background embedurl('img/pointer.gif') no-repeat 0 0
+  
+  &__body
+    background-color $bg-color
+    padding 35px 0 25px
+  
+  &__image
+    background-repeat no-repeat
+    background-position center 0
+    background-color $bg-color
+    background-size cover
+    min-height 240px
+    padding-top 70px
+    box-sizing( border-box )
+    
+    @media (max-width: 720px)
+      padding-top 30px
+  
+  &__nav
+    margin-bottom 10px
+    
+  &__i
+    text-align center
+  
+  &__icon
+    display block
+    width 120px
+    height 120px
+    margin 0 auto 10px
+    
+    .i-1 &
+      background url('/template/images/top-banner.png') no-repeat 0 0
+    
+    .i-2 &
+      background url('/template/images/top-banner.png') no-repeat -122px 0
+    
+    .i-3 &
+      background url('/template/images/top-banner.png') no-repeat -244px 0
+      
+  &__text
+    width 120px
+    display block
+    margin 0 auto

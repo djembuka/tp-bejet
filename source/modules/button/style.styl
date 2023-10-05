@@ -1,0 +1,131 @@
+@import '../../styl/component-include.styl'
+
+.b-button,
+a.b-button,
+input[ type="submit" ]
+  color #fff
+  font-size 10.5pt
+  font-weight bold
+  text-transform uppercase
+  text-align center
+  display inline-block
+  vertical-align top
+  padding 0 28px
+  line-height 50px
+  border-radius( 3px )
+  background-color $darker-grey
+  transition( all 0.3s ease )
+  box-sizing( border-box )
+  white-space nowrap
+  
+  &:hover
+    background-color $brand-color
+    text-decoration none
+    color #fff
+    
+  &:active
+    background-color #87af15
+  
+  &.i-new-win
+    background-position 10% center
+    padding 0 10% 0 20%
+    
+  &.i-full-width
+    width 100%
+    
+    
+  &.i-scheme-2
+    background-color $brand-color
+  
+    &:hover
+      background-color $button-scheme-2
+      
+    &:active
+      background-color $button-scheme-2-hover
+    
+    
+  &.i-scheme-3
+    background-color $button-scheme-3
+  
+    &:hover
+      background-color $button-scheme-3-hover
+      
+    &:active
+      background-color $button-scheme-3-active
+    
+    
+  &.i-scheme-4
+    background-color $button-scheme-4
+  
+    &:hover
+      background-color $button-scheme-2-hover
+      
+    &:active
+      background-color $button-scheme-2-active
+    
+    
+  &.i-scheme-5
+  
+    &:hover
+      background-color $button-scheme-2-hover
+      
+    &:active
+      background-color $button-scheme-2-active
+  
+  
+  &.i-back
+    
+    &:before
+      content " "
+      ib()
+      transform( translate(-28px) )
+      width 34px
+      height 50px
+      background embedurl( 'img/back.png' ) no-repeat center center rgba(0,0,0,0.1)
+      border-radius( 3px 0 0 3px )
+  
+  &.i-disabled
+    
+    &,
+    &:hover,
+    &:active
+      background-color $grey
+      cursor default
+    
+  .b-form-submit &
+    min-width 225px
+    
+  &.b-load-button
+    width 130px
+    background-color $darker-grey
+    
+    &:hover
+      background-color $brand-color
+
+    &:active
+      background-color $brand-color-active
+      
+  &.i-new-win
+    padding 0 28px 0 56px
+    background-position 15% center
+
+input[ type="submit" ]
+  background-color $brand-color
+
+  &:hover
+    background-color $button-scheme-2
+    
+  &:active
+    background-color $button-scheme-2-hover
+    
+.b-load-button__icon
+  ib()
+  width 23px
+  height 23px
+  background embedurl( 'img/load.png' ) no-repeat 0 0
+
+.b-button:hover .b-load-button__icon
+  background embedurl( 'img/load-hover.png' ) no-repeat 0 0
+
+.b-button:active .b-load-button__icon
+  background embedurl( 'img/load-hover.png' ) no-repeat 0 0

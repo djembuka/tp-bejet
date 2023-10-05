@@ -1,0 +1,26 @@
+﻿.b-video-container
+
+  .b-video-container__menu
+  
+    .b-video-container__menu-item.i-active( data-tab="video" )
+      .b-video-container__menu-icon.i-video
+        svg(id='Слой_2', data-name='Слой 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 181.42 181.42')
+          path.cls-1(d='M90.86,5A85.86,85.86,0,1,1,5,90.86,86,86,0,0,1,90.86,5m0-5a90.86,90.86,0,1,0,90.86,90.86A90.86,90.86,0,0,0,90.86,0Z')
+          polygon.cls-1(points='126.02 90.25 70.24 58.04 70.24 122.45 126.02 90.25')
+
+      .b-video-container__menu-text.hidden-xs Видео
+      
+    .b-video-container__menu-item( data-tab="gallery" )
+      .b-video-container__menu-icon.i-gallery
+        svg(id='Слой_1', data-name='Слой 1', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 181.42 181.42')
+          path.cls-1(d='M176.72,37.41V149.2H5V37.41H176.72m5-5H0V154.2H181.72V32.41Z')
+          polyline.cls-2(points='26.05 122.67 61.2 88.39 88.14 115.33 77.71 104.89 111.89 70.71 162.91 121.72')
+          circle.cls-3(cx='77.71', cy='63.91', r='10.83')
+          
+      .b-video-container__menu-text.hidden-xs Галерея
+      
+  .b-video-container__tab.i-active( data-tab="video" )
+    iframe(width='719', height='400', src='https://www.youtube.com/embed/h0tim0_WzXY', allowfullscreen='')
+  
+  .b-video-container__tab.hidden( data-tab="gallery" )
+    include ../../components/gallery/template.jade

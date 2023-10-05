@@ -1,0 +1,76 @@
+@import '../../styl/component-include.styl'
+
+.b-pay-options
+  text-align center
+  overflow hidden
+  
+.b-po
+  
+  &__i
+    ib()
+    margin 0 3% 20px
+    padding 0
+    width 121px
+    text-align center
+    color #fff
+    cursor pointer
+    line-height 17px
+    opacity(0)
+    -moz-animation-fill-mode forwards
+    -webkit-animation-fill-mode forwards
+    animation-fill-mode forwards
+    
+    &:hover .b-po__icon
+      background-color $dark-grey
+    
+    &:active,
+    &.i-active
+      color $brand-color
+      
+      .b-po__icon
+        background-color $brand-color
+        
+    &.i-bank
+      animation( poAnimation 1s ease 0.3s )
+      animation-fill-mode( forwards )
+      
+    &.i-card
+      animation( poAnimation 1s ease 0.5s )
+      animation-fill-mode( forwards )
+      
+    &.i-yandex
+      animation( poAnimation 1s ease 0.7s )
+      animation-fill-mode( forwards )
+  
+    input
+      display none
+        
+  &__icon
+    ib()
+    width 121px
+    height 121px
+    background-repeat no-repeat
+    background-position center center
+    background-color $darker-grey
+    transition( all 0.5s ease )
+    border-radius( 3px )
+    margin-bottom 17px
+    
+    .b-po__i.i-bank &
+      background-image embedurl( 'img/bank.png' )
+    
+    .b-po__i.i-card &
+      background-image embedurl( 'img/card.png' )
+    
+    .b-po__i.i-yandex &
+      background-image embedurl( 'img/yandex.png' )
+      
+      
+@keyframes poAnimation {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}

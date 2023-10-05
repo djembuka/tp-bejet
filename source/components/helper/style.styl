@@ -1,0 +1,99 @@
+@import '../../styl/component-include.styl'
+
+.b-helper
+  background-color $dark-grey
+  
+  &-tabs
+    height 70px
+    
+    nav
+      margin 0 95px
+      
+      span
+        float left
+        width 25%
+        line-height 70px
+        height 70px
+        text-align center
+        background-color #202020
+        font-size 9pt
+        cursor pointer
+        
+        &.i-active
+          background-color $dark-grey
+          color #fff 
+          
+      a
+        color $brand-color       
+        
+      &:after
+        content ''
+        display table
+        clear both
+        
+    @media ( max-width 767px )
+      height auto
+      
+      nav
+        margin 0
+        
+        span
+          width 50%
+        
+  &-body
+    color #fff
+    padding 20px 70px 70px
+  
+  &-fieldset
+    border-top 2px solid #333
+    padding-top 24px
+    
+    h3
+      line-height 1.7
+      margin-top 0
+      margin-bottom 4px
+      
+    p
+      font-size 9pt
+      
+      &:first-of-type
+        margin-top 0
+        
+      b
+        font-size 12pt
+        
+    .col-sm-6
+      margin-bottom 18px
+        
+    .col-sm-4
+      margin-bottom 25px
+      
+    label
+      line-height 17px
+      width 100%
+      
+      img
+        width 100%
+        height auto
+        margin-bottom 12px
+        
+    .b-button
+      min-width 194px
+      
+.b-helper-tab
+  display none
+  
+  &.i-active
+    display block
+    
+button.b-button
+  display none
+  
+  .i-submit &
+    display inline-block
+    
+.i-submit a.b-button
+  display none
+  
+#helperLinkAlt
+  display none

@@ -1,0 +1,35 @@
+﻿// start /components/form.auth/
+
+section.b-container.b-content
+  h1.i-center Войти
+  
+  hr
+  
+  form( action="/", method="get" )
+    
+    fieldset
+      .b-fieldset-content
+        p Вы уже заказывали решение в магазине Bejet? Значит на вашу почту приходили регистрационные данные. Введите их в форме ниже.
+        hr
+        .b-form-message.i-error Сообщение об ошибке
+        hr
+        include ../../modules/float-input/email.jade
+        hr
+        include ../../modules/float-input/password.jade
+        hr.i-size-L
+        .b-row
+          .b-col-sm-6
+            include ../../modules/checkbox/remember.jade
+          .b-col-sm-6.i-align-right
+            a( href="/forms/forgot-pass/" )
+              b Забыли?
+        hr
+        include ../../modules/float-input/capcha.jade
+    
+    hr.i-size-L
+    
+    .b-form-submit
+      include ../../modules/button/enter.jade
+        
+
+// end /components/form.auth/

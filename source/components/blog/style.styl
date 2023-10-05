@@ -1,0 +1,36 @@
+@import '../../styl/component-include.styl'
+
+.b-blog-list-item
+  background-color #2f2f2f
+  padding 0 30px 30px
+  transition( all 0.5s ease-out )
+  opacity 0
+  transform( translateY( 50px ))
+  
+  &:hover
+    box-shadow( 0 0 30px rgba( 152,200,16,.5 ))
+    
+  .i-animate &
+    opacity 1
+    transform( translateY(0))
+      
+  &__img
+    display block
+    margin 0 -30px
+    
+    img
+      width 100%
+      height auto
+      
+  h3
+    margin 35px 0 23px
+    
+.i-animate .col-sm-4
+  &:nth-of-type(1) .b-blog-list-item
+    transition-delay .1s
+    
+  &:nth-of-type(3) .b-blog-list-item
+    transition-delay .15s
+    
+  &:nth-of-type(2) .b-blog-list-item
+    transition-delay 0

@@ -1,0 +1,30 @@
+﻿// start /components/form.auth/
+
+section.b-container.b-content
+  h1.i-center Регистрация
+  
+  hr
+  
+  form( action="/", method="get" )
+    
+    fieldset
+      .b-fieldset-content
+        p Для регистрации на сайте укажите данные, которые вам потребуются для покупки приложений.
+        
+        include ../../modules/float-input/email.jade
+        hr
+        include ../../modules/float-input/password-reg.jade
+        hr
+        include ../../modules/float-input/password-confirm.jade
+        hr
+        include ../../modules/float-input/tel.jade
+        hr
+        include ../../modules/float-input/capcha.jade
+    
+    hr.i-size-L
+    
+    .b-form-submit
+      include ../../modules/button/enter.jade
+        
+
+// end /components/form.auth/

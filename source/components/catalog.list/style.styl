@@ -1,0 +1,277 @@
+@import '../../styl/component-include.styl'
+
+.b-list 
+  position: relative;
+  overflow hidden
+  
+  &:after
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    
+  &__img
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    //.opacity(0);
+    //.transition( opacity 0.5s ease );
+    
+  &.i-img-loaded:hover &__big-img
+    //.opacity(1);
+  
+  &__props
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing( border-box )
+    padding: 10px 20px;
+    font-size: 9pt;
+    line-height 50px
+    background-color rgba(0,0,0,0.85)
+    transition( all 0.3s ease )
+    z-index: 12;
+
+  &__name
+    float left
+    margin-right 20px
+      
+  &__title
+    float left
+    margin-right 20px
+  
+  &__price
+    float right
+    
+    
+  //shutter when hover
+  &__shutter
+    position absolute
+    top 0
+    right 0
+    bottom 0
+    left 0
+    width 100%
+    height 100%
+    background-color rgba(0,0,0,0.5)
+    opacity(0)
+    text-align center
+    color #fff
+    transition( opacity 0.5s ease )
+    z-index 13
+  
+  &__sh-title
+    display block
+    position absolute
+    top 60%
+    left 0
+    width 100%
+    font-size 13.5pt
+    font-weight bold
+    transition( top 0.5s ease )
+  
+  &__sh-price
+    display block
+    position absolute
+    top 70%
+    left 0
+    width 100%
+    transition( top 0.5s ease )
+    font-size 20pt
+    font-weight bold
+    
+  &__sh-old
+    text-decoration line-through
+    font-weight normal
+    display block
+    font-size 12pt
+    color $lightest-grey
+    margin-top -7px
+  
+  &__sh-text
+    display block
+    font-size 10.5pt
+    font-weight bold
+    text-transform uppercase
+  
+  &__sh-button
+    display block
+    position absolute
+    top 80%
+    left 0
+    width 100%
+    transition( top 0.5s ease )
+    
+  //end shutter
+  
+  &__i:hover &__props
+    bottom -50px
+    opacity(0.5)
+  
+  &__i:hover &__shutter
+    opacity(1)
+  
+  &__i:hover &__sh-title
+    top 17%
+    line-height 1.3
+    -moz-box-sizing border-box
+    box-sizing border-box
+    padding 0 20px
+    
+    @media ( min-width: 801px )
+      top 25%
+      padding 0 80px
+      line-height 1.7
+      
+    @media ( max-width: 1630px ) and ( min-width: 1301px )
+      top 15%
+      line-height 1.5
+      
+    @media ( max-width: 1073px ) and ( min-width: 801px )
+      top 15%
+      line-height 1.5
+      padding 0 20px
+  
+  &__i:hover &__sh-price
+    top 43%
+  
+  &__i:hover &__sh-button
+    top 70%
+  
+  @media ( min-width: 801px )
+    &.i-large-item
+      float: none;
+      display: block;
+      width: 100%;
+      max-height: 525px;
+      overflow: hidden;
+      
+      .b-estate-list__i__title
+        font-size: 36pt;
+        bottom: 12%;
+      
+      .b-estate-list__i__props
+        font-size: 13.5pt;
+        line-height: 1.45;
+        bottom: 12%;
+      
+      .b-estate-list__i__price
+        font-size: 26pt;
+        margin-top: 6px;
+  
+  &__i
+    float: left;
+    width: 33.3%;
+    position: relative;
+    background: url(/template/images/preloader-25.gif) no-repeat 55px 55px $dark-grey;
+    overflow: hidden;
+    z-index: 8;
+    transition( all 1s ease )
+    
+    &:hover,
+    &:active,
+    &:focus
+      color: #fff;
+      transform scale( 1.2 )
+      z-index 10
+    
+    &:nth-child( even )
+      background-color: $darker-grey;
+      background-image: url(/template/images/preloader-17.gif);
+      
+    @media ( max-width: 800px)
+      width: 100%;
+        
+    @media ( max-width: 1300px ) and ( min-width: 801px )
+      width: 50%;
+    
+    &.i-sale
+      
+      &:before
+        display block
+        content '%'
+        position absolute
+        top 19px
+        right 19px
+        background-color $brand-color
+        border-radius 51%
+        width 32px
+        height 32px
+        text-align center
+        line-height 32px
+        font-size 11pt
+        color $middle-grey
+        font-size 12pt
+        opacity 1
+        transition( opacity 0.5s ease )
+        
+      &:hover:before
+        opacity 0
+        
+        
+      .b-list__sh-num
+        color $brand-color
+  
+  &.i-empty
+    padding-top: 33.3%;
+    
+    @media ( max-width: 800px)
+      padding-top: 100%;
+    
+    @media ( max-width: 1300px ) and ( min-width: 801px )
+      padding-top: 50%;
+    
+      
+.b-empty
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 17.5%;
+  z-index: 7;
+  
+  @media ( max-width: 800px)
+    width: 400%;
+    padding-top: 70%;
+  
+  @media ( max-width: 1300px ) and ( min-width: 801px )
+    width: 200%;
+    padding-top: 35%;
+  
+  @media ( min-width: 1301px )
+    width: 133.3%;
+    padding-top: 23.3%;
+  
+  &__cont
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+  &__i
+    float left
+    width 25%
+    height 100%
+    background-color $dark-grey
+    position relative
+    color $middle-grey
+    font-size 14pt
+    font-weight bold
+    letter-spacing 2px
+    text-transform uppercase
+    text-align center
+    
+  &__i span
+      position absolute
+      top 50%
+      left 0
+      margin -10px 0 0
+      display block
+      width 100%
+    
+    &:nth-child( even )
+      background-color: $darker-grey;

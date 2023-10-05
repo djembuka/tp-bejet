@@ -1,0 +1,27 @@
+﻿// start /components/form.auth/
+
+link( rel="stylesheet", href="/components/form.auth/style.css" )
+script( src="/components/form.auth/script.js" )
+
+section.b-container.b-content
+  h1.i-center Восстановление пароля
+  
+  hr
+  
+  form( action="/", method="get" )
+    
+    fieldset
+      .b-fieldset-content
+        p На Ваш email , будет отправлена инструкция, как восстановить доступ в Ваш личный кабинет.
+        
+        include ../../modules/float-input/email-or.jade
+        hr
+        include ../../modules/float-input/login.jade
+    
+    hr.i-size-L
+    
+    .b-form-submit
+      include ../../modules/button/enter.jade
+        
+
+// end /components/form.auth/

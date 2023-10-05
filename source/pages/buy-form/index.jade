@@ -1,0 +1,27 @@
+﻿extends ../../layouts/main.jade
+
+block title
+  | Buy form | Bejet
+
+block content
+  .b-container
+    
+    hr.i-size-L
+    
+    .b-h1.i-center
+      b Комплектация
+    
+    form(
+      action="/basket/"
+      method="get"
+    )
+    
+      include ../../modules/solution-options/include.jade
+      
+      hr.i-size-L
+      
+      .b-popup__button
+        include ../../modules/button/popup.jade
+        
+    hr.i-size-L
+        

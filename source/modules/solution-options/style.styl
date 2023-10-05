@@ -1,0 +1,159 @@
+@import '../../styl/component-include.styl'
+
+.b-solution-options
+  
+  &.i-lite
+    border 1px solid #484848
+    
+    .ui-selectmenu-button
+      margin -12px 0
+      
+      @media( max-width 580px )
+        margin 0
+        width 225px !important
+        
+    .ui-selectmenu-menu .ui-menu
+      
+      @media( max-width 580px )
+        width 225px !important
+
+  ul
+    margin 0
+    padding 0
+    border-top 1px solid $middle-grey
+    
+  .ui-selectmenu-button
+    display block
+  
+.b-so
+  
+  &__i
+    rel()
+    border-bottom 1px solid $middle-grey
+    list-style-type none
+    padding 24px 0 24px 53px
+    color $brand-color
+    after()
+    cursor pointer
+    background embedurl('img/checked.png') no-repeat 10px center;
+    
+    @media( max-width 580px )
+      background-position 10px 15px
+      padding 10px 0 10px 43px
+    
+    .i-lite &
+      border-bottom 1px solid #484848
+      margin 3px 26px
+      padding-bottom 27px
+      
+      @media( max-width 580px )
+        margin 3px 0
+    
+    .i-unselective &
+      cursor default
+      background none
+      padding-left 24px
+      color #fff
+    
+    &.i-unchecked
+      color #fff
+      background-image embedurl('img/unchecked.png')
+      
+      .i-lite &
+        color #ccc
+      
+      select
+        color #fff
+        
+      .i-lite & .ui-selectmenu-button,
+      .i-lite & .ui-selectmenu-button.ui-state-hover
+        color #ccc
+      
+    .b-select
+      margin-top 10px
+      
+  &__checkbox
+    display none
+      
+  &__name
+    float left
+      
+  &__price
+    float right
+    white-space nowrap
+    margin-right 20px
+    
+    @media( max-width 580px )
+      float none
+      clear both
+      padding-top 15px
+      
+    &-num
+      font-size 10.5pt
+      margin-right 12px
+      
+    &.i-hide
+      visibility hidden
+      
+    &.i-old
+      color #ccc
+      text-decoration line-through
+      
+  &__summ
+    text-align center
+    font-size 18pt
+    font-weight bold
+    color #fff
+    transition( opacity 0.5s ease )
+    
+    .b-solution-options.i-unchecked &
+      opacity(0)
+    
+    &-num
+      margin-right 12px
+      
+    &-unit
+      font-size 10.5pt
+      
+  &__button
+    text-align center
+    margin-top 20px
+    padding-bottom 38px
+    
+    input
+      width 200px
+      
+  &__note
+    abs()
+    padding 13px 20px
+    background #aa4242
+    font-size 9pt
+    color #fff
+    border-radius( 3px )
+    width 0
+    overflow hidden
+    white-space nowrap
+    animation( soNote 1.5s ease )
+    -webkit-animation-fill-mode forwards
+    animation-fill-mode forwards
+    box-sizing content-box
+    -moz-box-sizing content-box
+      
+@keyframes soNote {
+  0% {
+   width 0
+   margin-left 0
+  }
+  25% {
+   width 230px
+   margin-left -135px
+  }
+  60% {
+   opacity(1)
+  }
+  100% {
+   width 230px
+   margin-left -135px
+   opacity(0)
+  }
+}

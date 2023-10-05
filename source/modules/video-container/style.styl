@@ -1,0 +1,108 @@
+@import '../../styl/component-include.styl'
+
+.b-video-container
+  background $dark-grey
+  padding 40px
+  transition( height 0.5s ease )
+  margin-top -41px
+  
+  @media( max-width 767px )
+    padding 20px
+    
+  &__menu
+    text-align center
+    margin-bottom 40px
+    
+    @media( max-width 767px )
+      margin-bottom 20px
+    
+    svg
+      vertical-align top
+      
+    .cls-1
+      fill #999
+    
+    .cls-2,
+    .cls-3
+      fill none
+      stroke #999
+      stroke-linecap round
+      stroke-miterlimit 10
+      stroke-width 5px
+      
+    .cls-2
+      fill-rule evenodd
+    
+    &-item
+      display inline-block
+      width 169px
+      height 56px
+      cursor pointer
+      text-align center
+      padding 12px 0
+      
+      @media( max-width 767px )
+        width 56px
+      
+      &.i-active
+        background-color $middle-grey
+      
+      &:hover,
+      &.i-active
+        color $brand-color
+        
+        .cls-1
+          fill $brand-color
+        
+        .cls-2,
+        .cls-3
+          stroke $brand-color
+      
+    &-icon
+      display inline-block
+      vertical-align middle
+      width 32px
+      height 32px
+      margin-right 17px
+      
+      @media( max-width 767px )
+        margin-right 0
+      
+    &-text
+      display inline-block
+      vertical-align top
+      line-height 32px
+      
+  &__tab
+    //display none
+    
+    &.i-active
+      display block
+      
+  iframe
+    margin 0 auto 40px
+    max-width 100%
+    border 0
+    
+  .show-tab
+    display block
+    animation( showTab .5s ease-out )
+    -webkit-animation-fill-mode forwards
+    animation-fill-mode forwards
+    
+  .hide-tab
+    animation( hideTab .5s ease-out )
+    -webkit-animation-fill-mode forwards
+    animation-fill-mode forwards
+    
+@keyframes showTab
+  0%
+    opacity 0
+  100%
+    opacity 1
+    
+@keyframes hideTab
+  0%
+    opacity 1
+  100%
+    opacity 0

@@ -1,0 +1,52 @@
+
+<!-- start /components/subscription/-->
+<link rel="stylesheet" href="/components/subscription/style.css"/>
+<script src="/template/cookie.js"></script>
+<script src="/components/subscription/script.js"></script>
+<div class="b-subscription">
+  <form action="/components/subscription/send.json" method="GET">
+    <fieldset>
+      <h2>Подписка</h2>
+      <hr/>
+      <p>Обзоры обновлений, новинки маркетплейса, сравнения и рецензии на решения, скидки.</p>
+      <div class="b-form-field i-float">
+        <label class="b-label">Email</label>
+        <input type="email" name="email" value="" required="required" class="b-input-text"/><span class="b-asterisk">*</span>
+      </div>
+    </fieldset>
+    <hr class="i-size-L"/>
+    <div class="b-form-submit">
+      <button type="submit" class="b-button i-scheme-2">Подписаться</button>
+    </div>
+  </form>
+  <fieldset class="b-message">
+    <h3>Ваш запрос на подписку принят</h3>
+    <hr/>
+    <p>Пожалуйста проверьте вашу почту, чтобы подтвердить вашу подписку.</p>
+    <p>Спасибо!</p>
+  </fieldset>
+</div>
+<div class="b-subscription i-white">
+  <form action="/components/subscription/error.json" method="GET">
+    <fieldset>
+      <h2>Подписка</h2>
+      <hr/>
+      <p>Обзоры обновлений, новинки маркетплейса, сравнения и рецензии на решения, скидки.</p>
+      <div class="b-form-field i-float">
+        <label class="b-label">Email</label>
+        <input type="email" name="email" value="" required="required" class="b-input-text"/><span class="b-asterisk">*</span>
+      </div>
+    </fieldset>
+    <hr class="i-size-L"/>
+    <div class="b-form-submit">
+      <button type="submit" class="b-button i-scheme-2">Подписаться</button>
+    </div>
+  </form>
+  <fieldset class="b-message">
+    <h3>Ваш запрос на подписку принят</h3>
+    <hr/>
+    <p>Пожалуйста проверьте вашу почту, чтобы подтвердить вашу подписку.</p>
+    <p>Спасибо!</p>
+  </fieldset>
+</div>
+<!-- end /components/subscription/-->

@@ -1,0 +1,17 @@
+﻿#popup-more.b-popup
+  a( href="" ).b-popup__close Закрыть
+  .b-popup__content.b-container
+    .b-h1
+      b Комплектация
+    
+    form(
+      action=""
+      method="get"
+    )
+    
+      include ../../modules/solution-options/include.jade
+      
+      hr.i-size-L
+      
+      .b-popup__button
+        include ../../modules/button/popup.jade

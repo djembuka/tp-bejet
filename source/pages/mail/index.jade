@@ -1,0 +1,136 @@
+﻿doctype html
+html
+  head
+    meta( charset="utf-8" )
+    title Mail
+    style
+      |body {
+      |  font-size:20pt;
+      |  height:100%;
+      |  background: grey;
+      |  color: red;
+      |  font-family: "Courier New", Courier, monospace;
+      |}
+  body
+  
+    - var mainDiv = "margin: 0; padding: 33px; background-color: #f1f1f1; border: none;";
+    - var div = "margin: 0; padding: 0; border: none;";
+    - var table = "border-collapse: collapse; width: 546px; margin: 0 auto;";
+    
+    - var tableInner = "border-collapse: collapse; width: 100%; margin: 0;";
+    
+    - var tdTop = "border-collapse: collapse; vertical-align: top; background-color: #fff; padding: 26px 20px 10px;";
+    - var td = "border-collapse: collapse; vertical-align: top; background-color: #fff; padding: 12px 20px;";
+    - var tdInner = "border-collapse: collapse; vertical-align: top; background-color: #fff; padding: 5px 0;";
+    - var tdInnerLeft = "border-collapse: collapse; vertical-align: top; background-color: #fff; padding: 5px 20px 5px 0;";
+    - var tdButton = "border-collapse: collapse; vertical-align: top; background-color: #fff; padding: 20px;";
+    - var tdSocial = "border-collapse: collapse; vertical-align: top; background-color: #fff; padding: 12px 20px 30px;";
+    
+    - var center = "text-align: center;";
+    
+    - var text = "text-transform: none; color: #000; font-weight: normal; font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 400; line-height: 18px; padding: 0; margin: 0;";
+    
+    - var footerText = "text-transform: none; color: #999999; font-weight: normal; font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 10px; font-weight: 400; line-height: 14px; padding: 0; margin: 0;";
+    
+    - var a = "text-transform: none; color: #98c810; font-weight: normal; font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 400; line-height: 14px; padding: 0; margin: 0;";
+    
+    - var img = "margin: 0; padding: 0; border: 0; vertical-align: bottom; cursor: pointer;";
+    
+    - var h1 = "text-transform: none; color: #000; font-weight: normal; font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; line-height: 36px; padding: 0; margin: 0 0 4px; text-align: center;";
+    
+    - var h2 = "text-transform: none; color: #000; font-weight: normal; font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 700; line-height: 30px; padding: 0; margin: 0 0 14px; text-align: center;";
+    
+    - var h3 = "text-transform: none; color: #000; font-weight: normal; font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 700; line-height: 18px; padding: 0; margin: 0 0 14px; text-align: center;";
+    
+    - var price = "text-transform: none; color: #000; font-weight: normal; font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; line-height: 28px; padding: 0; margin: 0 0 14px; text-align: center;";
+    
+    - var sep = "width: 506px; height: 9px; margin: 0; padding: 0; border: 0; display: block;";
+    
+    div( style="#{mainDiv}" )
+    
+      div( style="margin: 0; padding: 0 0 30px 0; border: none; text-align: center;" )
+        a( href="http://www.bejet.ru" target="_blank" style="#{a}")
+          img( src="images/logo.gif" style="#{img}" alt="Bejet" )
+          
+      table( style="#{table}" )
+        tr
+          td( style="#{tdTop}" )
+            div( style="#{h2}" ) Приветствуем Вас,
+              br
+              |Савельев Максим Олегович
+        tr
+          td( style="#{td}" )
+            div( style="#{h1}" ) Вы сделали заказ
+            div( style="#{h3}" ) N 871839
+        tr
+          td( style="#{td} #{center}" )
+            img( src="images/sep.gif" style="#{sep}" alt="" )
+        tr
+          td( style="#{td}" )
+            div( style="#{h2}" ) Состав заказа
+            table( style="#{tableInner}" )
+              tr
+                td( style="#{tdInnerLeft}" )
+                  div( style="#{text}" ) Лицензия «Готовый интернет-магазин Seller»
+                td( style="#{tdInner}" )
+                  div( style="#{text}" ) 15 000 руб.
+              tr
+                td( style="#{tdInnerLeft}" )
+                  div( style="#{text}" ) Лицензия «1С-Битрикс: Управление сайтом»
+                    br
+                    |— Малый бизнес
+                td( style="#{tdInner}" )
+                  div( style="#{text}" ) 27 900 руб.
+              tr
+                td( style="#{tdInnerLeft}" )
+                  div( style="#{text}" ) Хостинг 1 год. Тариф 10 Гб.
+                td( style="#{tdInner}" )
+                  div( style="#{text}" ) 10 000 руб.
+        tr
+          td( style="#{td} #{center}" )
+            img( src="images/sep.gif" style="#{sep}" alt="" )
+        tr
+          td( style="#{td}" )
+            div( style="#{h2}" ) Итого
+            div( style="#{price}" ) 56 000 руб.
+        tr
+          td( style="#{td} #{center}" )
+            img( src="images/sep.gif" style="#{sep}" alt="" )
+        tr
+          td( style="#{td}" )
+            div( style="#{h2}" ) Способ оплаты
+            div( style="#{text} #{center}" ) Карта
+        tr
+          td( style="#{td} #{center}" )
+            img( src="images/sep.gif" style="#{sep}" alt="" )
+        tr
+          td( style="#{td}" )
+            div( style="#{h2}" ) Контактные данные
+            div( style="#{text} #{center}" )
+              |Twin px
+              br
+              |Савельев Максим Олегович
+              br
+              |maximsav@gmail.com
+              br
+              |8 916 363 71 71
+        tr
+          td( style="#{td} #{center}" )
+            img( src="images/sep.gif" style="#{sep}" alt="" )
+        tr
+          td( style="#{tdButton} #{center}" )
+            a( href="http://www.bejet.ru" target="_blank" style="#{a}")
+              img( src="images/button.gif" style="#{img}" alt="Оплатить счет" )
+        tr
+          td( style="#{td}" )
+            div( style="#{footerText}" )
+              p Bejet — компания предлагающая на Российском рынке новый сегмент веб-предложений для бизнеса — тиражные решения.
+              p Легко устанавливаемые и уже готовые для использования решения направлены на быстрый запуск веб-проекта и минимизацию рисков. Первым решением компании стал «Готовый сайт компании ©» созданный и запущенный в продажу в начале 2010 года.
+        tr
+          td( style="#{tdSocial} #{center}" )
+            a( href="http://www.bejet.ru" target="_blank" style="#{a}")
+              img( src="images/twitter.gif" style="#{img}" alt="Twitter" )
+            |&nbsp;
+            a( href="http://www.bejet.ru" target="_blank" style="#{a}")
+              img( src="images/facebook.gif" style="#{img}" alt="Facebook" )
+

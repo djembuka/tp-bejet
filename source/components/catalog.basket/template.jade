@@ -1,0 +1,53 @@
+﻿// start /components/catalog.basket/
+
+link( rel="stylesheet", href="/components/catalog.basket/style.css" )
+script( src="/components/catalog.basket/script.js" )
+
+.b-catalog-basket
+  h1 Оформление заказа
+  hr
+  form( action="", method="get" )
+    
+    fieldset
+      h2 Способ оплаты
+      p Выберите удобный Вам способ оплаты.
+      hr.i-size-L
+      include ../../modules/pay-options/include.jade
+        
+    hr
+        
+    fieldset
+    
+      .b-license
+        h2 Владелец лицензии
+        p Для регистрации лицензий на программное обеспечение необходимо заполнить контактную информаацию о лице отвественном за использование программного обеспечения.
+        hr
+        include ../../modules/float-input/company.jade
+        hr
+        include ../../modules/float-input/name.jade
+        hr
+        include ../../modules/float-input/email.jade
+        hr
+        include ../../modules/float-input/tel.jade
+        
+    hr
+        
+    fieldset
+      h2 Комплектация
+      hr.i-size-M
+      include ../../modules/solution-options/unselective.jade
+        
+    hr
+        
+    fieldset
+      h2 Лицензионное соглашение
+      hr.i-size-M
+      include ../../modules/checkbox/include.jade
+      include ../../modules/checkbox/bitrix.jade
+    
+    hr.i-size-L
+    
+    .b-form-submit
+      include ../../modules/button/basket.jade
+
+// end /components/catalog.basket/

@@ -1,0 +1,120 @@
+﻿doctype html
+html
+  head
+    title
+      block title
+        |Bejet
+    meta( charset="utf-8" )
+    meta( name="keywords", content="")
+    meta( name="description", content="")
+    meta( name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" )
+    link(
+      rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"
+    )
+    link( rel="stylesheet", href="/template/jquery-ui.min.css" )
+    link( rel="stylesheet", href="/template/perfect-scrollbar/perfect-scrollbar.min.css" )
+    link( rel="stylesheet", href="/template/template_styles.css" )
+    link( href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin,cyrillic' rel='stylesheet' )
+    
+    script( src="/template/jquery.js" )
+    script( src="/template/jquery-ui.min.js" )
+    script( src="/template/perfect-scrollbar/perfect-scrollbar.min.js" )
+    script( src="/template/jscript.js" )
+    script( src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous" )
+    
+  body
+    
+    include ../modules/slider/include.jade
+  
+    header.b-header
+      .b-container
+        include ../modules/slide-button/include.jade
+        
+        .b-header__logo
+          img(
+            src="/template/images/bejet-logo.png",
+            alt=""
+          )
+          
+        nav.b-header-nav
+          - var nav = [ 'Что такое bejet', 'Зачем?', 'Как купить' ];
+          - for( var i = 0; i < nav.length; i++ )
+            a.b-header-nav__i( href="" ) #{nav[i]}
+    
+    block top-banner
+    
+    block content
+    
+      section.b-container.b-content
+        h1 Bejet
+        p.b-large-text Bejet — компания предлагающая на Российском рынке новый сегмент веб-предложений для бизнеса — тиражные решения. 
+        p.b-large-text Легко устанавливаемые и уже готовые для использования решения направлены на быстрый запуск веб-проекта и минимизацию рисков. Первым решением компании стал «Готовый сайт компании ©» созданный и запущенный в продажу в начале 2010 года.
+    
+    footer.b-footer
+      
+      block footer-menu
+        .b-container
+          .b-row
+            .b-col-sm-4
+              h4 Решения
+              menu
+                li
+                  a(href="") Готовый интернет-магазин модной одежды Seller
+                li
+                  a(href="") Готовый сайт юридиеского бюро
+                li
+                  a(href="") Готовый сайт сервисной компании
+            .b-col-sm-4
+              h4 Контакты
+              menu
+                li
+                  a(href="") Написать в поддержку
+                li
+                  a(href="") Партнерам
+            .b-col-sm-4
+              h4 О проекте
+              menu
+                li
+                  a(href="") Что такое Bejet
+                li
+                  a(href="") Зачем
+                li
+                  a(href="") Как купить
+                  
+      block footer-copyright
+        .b-footer__copyright
+          .b-container
+            .b-row
+              .b-col-sm-6
+                | 2010-2015    ООО «Твин пикс»
+              .b-col-sm-6.b-footer__phone
+                | 8 499 946 35 23
+                
+            #bx-composite-banner
+              a.bx-composite-btn.bx-btn-white.bx-composite-btn-fixed( target="_blank" href="http://www.1c-bitrix.ru/composite/" style="background-color: rgb(233, 69, 36);" ) Быстро с 1С-Битрикс
+  
+style
+  |.bx-btn-white {
+  |  background-position: right 0;
+  |  color: #fff !important;
+  |}
+  |.bx-composite-btn-fixed {
+  |  position: absolute;
+  |  top: -45px;
+  |  right: 15px;
+  |  z-index: 10;
+  |}
+  |.bx-composite-btn {
+  |  background: url(/bitrix/images/main/composite/sprite-1x.png) no-repeat right 0 #e94524;
+  |  border-radius: 15px;
+  |  color: #ffffff !important;
+  |  display: inline-block;
+  |  line-height: 30px;
+  |  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  |  font-size: 12px !important;
+  |  font-weight: bold !important;
+  |  height: 31px !important;
+  |  padding: 0 42px 0 17px !important;
+  |  vertical-align: middle !important;
+  |  text-decoration: none !important;
+  |}

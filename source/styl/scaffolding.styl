@@ -1,0 +1,107 @@
+.b-header
+  height 75px
+  color: #fff
+  background-color $middle-grey
+  padding 10px 0 5px
+  clearfix()
+  box-sizing( border-box )
+  
+  a
+    color #fff
+    
+    &:hover
+      color: $brand-color
+  
+  &__logo
+    margin-top 7px
+    margin-right 60px
+    float left
+    
+  &__heading
+    float left
+    margin-bottom 10px
+  
+    h3
+      font-size 12pt
+      margin 0
+      
+    h5
+      margin 0
+  
+  &-nav
+    margin-top 17px
+    font-size 9pt
+    font-weight bold
+    text-transform uppercase
+    float right
+    
+    @media (max-width: 720px)
+      display none
+    
+    &__i
+      display inline-block
+      vertical-align top
+      margin-left 45px
+      
+      @media (max-width: 992px)
+        margin-left 15px
+      
+    .b-button
+      margin-left 45px
+      margin-top -15px
+      
+      @media (max-width: 992px)
+        margin-left 15px
+
+.b-container
+  padding: 0 50px
+  
+  @media (max-width: 720px)
+    padding: 0 $grid-gap-xs
+    
+.b-row
+  margin-right: -1 * $grid-gap-xs
+  margin-left: -1 * $grid-gap-xs
+  clearfix()
+  
+.b-content
+  padding-top 50px
+  padding-bottom 50px
+  
+.b-contrast
+  background-color $dark-grey
+
+.b-footer
+  background-color $dark-grey
+  
+  > .b-container
+    padding-top 40px
+    padding-bottom 40px
+    
+  
+  menu
+    font-size 9pt
+  
+  &__copyright
+    background-color $darker-grey
+    color $grey
+    line-height 22px
+    padding 45px 0
+    font-size 9pt
+    //height 112px
+    box-sizing( border-box )
+    
+  &__phone
+    text-align right
+    font-size 10.5pt
+
+#bx-composite-banner
+  rel()
+  
+.bx-composite-btn
+  position absolute
+  //top -25px !important
+  top 0 !important
+  right auto !important
+  left 50%
+  margin-left -93px

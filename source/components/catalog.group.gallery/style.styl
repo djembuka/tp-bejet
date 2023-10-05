@@ -1,0 +1,85 @@
+@import '../../styl/component-include.styl'
+
+.b-catalog-group-gallery
+  &__text
+    position absolute
+    top 50%;
+    left 0
+    width 100%
+  
+  @media ( max-width: $media-width1 )
+    .b-container
+      padding-left 0
+      padding-right 0
+    
+    .b-h1
+      font-size 14pt
+      
+    .slideme
+      margin 0 !important
+      
+    button
+      display none
+
+.slideme
+  rel()
+  margin 0 50px !important
+  
+  li
+    margin 0
+    padding 0
+  
+  
+  img
+    width 100% !important
+
+.slideme_container
+  
+  button
+    &.prev,
+    &.next
+      background embedurl( 'img/prev.png' ) no-repeat center center transparent
+      text-indent -100px
+      overflow hidden
+      width 50px
+      height 100%
+      opacity(0.5)
+      position absolute
+      top 0
+      left 0
+      z-index 10
+      
+      &:hover
+        opacity(1)
+  
+  button.next
+    background embedurl( 'img/next.png' ) no-repeat center center transparent
+    right 0
+    left auto
+  
+  .pagination
+    
+    ol
+      margin 24px 0 0
+      padding 0
+      text-align center
+      line-height 0
+    
+    
+    li
+      list-style-type none
+      ib()
+      text-indent -100px
+      overflow hidden
+      width 15px
+      height 15px
+      margin 0 1px
+      cursor pointer
+      background embedurl( 'img/page.png' ) no-repeat center center
+    
+      &.current
+        background embedurl( 'img/page-current.png' ) no-repeat center center
+  
+  ul
+    padding-top 65%
+    height 0 !important

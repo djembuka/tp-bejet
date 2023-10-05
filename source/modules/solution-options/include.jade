@@ -1,0 +1,70 @@
+﻿.b-solution-options
+  ul
+        
+    li.b-so__i( data-disabled="Эту позицию нельзя удалить из заказа.")
+      input.b-so__checkbox(
+        type="checkbox"
+        name="order[]"
+        value="val1"
+        checked=true
+      )
+      .b-so__name Лицензия «Готовый интернет-магазин Seller»
+      .b-so__price
+        span.b-so__price-num 17 000
+        span.b-so__price-unit руб.
+        
+    li.b-so__i
+      input.b-so__checkbox(
+        type="checkbox"
+        name="order[]"
+        value="val2"
+        checked=true
+      )
+      .b-so__name
+        .b-so__select-container
+          select.b-so__select
+            option( value="val1" data-price="15 000" ) Малый бизнес
+            option( value="val2" data-price="20 000" ) Интернет-магазин
+            option( value="val3" data-price="22 000" ) Решения для государственных организаций
+            option( value="val4" data-price="30 000" ) Сайт конференции
+          
+      .b-so__price
+        span.b-so__price-num 27 900
+        span.b-so__price-unit руб.
+        
+    li.b-so__i
+      input.b-so__checkbox(
+        type="checkbox"
+        name="order[]"
+        value="val3"
+        checked=true
+      )
+      .b-so__name
+        .b-so__select-container
+          select.b-so__select
+            option( value="val1" data-price="2 000" ) Хостинг 1 год (3 Гб)
+            option( value="val2" data-price="3 000" ) Хостинг 2 года (3 Гб)
+            option( value="val3" data-price="4 000" ) Хостинг 3 года (3 Гб)
+            option( value="val4" data-price="5 000" ) Хостинг 4 года (3 Гб)
+            
+      .b-so__price
+        span.b-so__price-num 3 000
+        span.b-so__price-unit руб.
+        
+    li.b-so__i
+      input.b-so__checkbox(
+        type="checkbox"
+        name="order[]"
+        value="val4"
+        checked=true
+      )
+      .b-so__name Домен
+      .b-so__price
+        span.b-so__price-num 600
+        span.b-so__price-unit руб.
+      
+  hr.i-size-L
+
+  .b-so__summ
+    span.b-so__summ-num 56 000
+    span.b-so__summ-unit руб.

@@ -1,0 +1,244 @@
+fieldset
+  border none
+  background-color $dark-grey
+  padding 40px
+  margin 150px 0 0 0
+  border-radius( 3px )
+  color #fff
+  transition( margin-top 0.7s ease )
+  
+  @media ( max-width: $media-width1 )
+    margin 0 -20px
+    padding-right 20px
+    padding-left 20px
+    
+  .i-white &
+    background-color #f2f2f2
+    color #333
+  
+  &.i-move
+    margin-top 0
+  
+  h2
+    text-align center
+    margin-top 0
+    
+  p
+    text-align center
+    font-size 9pt
+    
+  a
+    color #fff
+
+.b-fieldset-content
+  max-width 520px
+  margin-right auto
+  margin-left auto
+  
+button
+  border 0
+  
+  &:focus
+    outline 0
+
+input
+  border 0
+  padding 0
+  margin 0
+  
+  &:focus
+    outline 0
+    
+select
+  background $bg-color
+  border-radius( 3px )
+  border 1px solid #494949
+  padding 10px 15px
+  color $brand-color
+  width 312px
+  
+  &:focus
+    outline 0
+    
+options
+  color $brand-color
+  border 1px solid #494949
+  
+  &:focus
+    outline 0
+    
+.b-form
+  
+  &-field
+    margin-bottom 0
+    rel()
+      
+    .b-asterisk
+      position absolute
+      bottom 5px
+      right 22px
+      font-size 19pt
+  
+    &.i-warning .b-asterisk
+      color $warning-color
+
+  &-submit
+    text-align center
+    
+  &-message
+    padding 13px 20px
+    font-size 9pt
+    border-radius( 3px )
+    overflow hidden
+    white-space nowrap
+    text-align center
+    
+    &.i-error
+      background #aa4242
+      color #fff
+      
+    
+.b-input-text
+  background-color $darker-grey
+  border-radius( 2px )
+  box-sizing( border-box )
+  padding 0 45px 0 5%
+  height 60px
+  width 520px
+  display block
+  color #fff
+  
+  @media ( max-width: $media-width1 )
+    width 100%
+  
+  /*&[required]
+    background-image embedurl('img/star.png')
+    background-repeat no-repeat
+    background-position right center
+    
+    .i-warning &
+      background-image embedurl('img/star-warning.png')*/
+      
+  .i-warning &
+    background-color $warning-bg
+    color $warning-color
+    
+  &[name="capcha"]
+    padding-right 212px
+    
+  .i-white &
+    background-color #fff
+    color #333
+    
+.b-label
+  ib()
+  font-size 10.5pt
+  font-weight bold
+  color #fff
+  padding-left 5%
+    
+  .i-white &
+    color #333
+  
+  .i-warning &
+    color $warning-color
+    
+.b-capcha-img
+  position absolute
+  top 38px
+  right 10px
+  
+  @media( max-width 540px )
+    position static
+    display block
+  
+.b-radio-anim
+  padding-left 40px
+  
+  label
+    rel()
+    font-weight normal
+    
+    &:before
+      content ''
+      display block
+      border 3px solid $darker-grey
+      background-color $darker-grey
+      border-radius 51%
+      height 24px
+      width 24px
+      position absolute
+      top -1px
+      left -40px
+      transition( all 0.5s ease )
+    
+    &:after
+      content ''
+      display block
+      background-color $brand-color
+      border-radius 51%
+      height 24px
+      width 24px
+      transform scale(0)
+      position absolute
+      top -1px
+      left -40px
+      transition( all 0.3s ease )
+  
+  input[ type="radio" ]:checked + label
+    color $brand-color
+    
+    &:before
+      border-color $brand-color
+      background-color transparent
+    
+    &:after
+      transform scale(0.5)
+    
+  input[ type="radio" ]
+    display none
+    
+.b-checkbox-anim
+  padding-left 40px
+  
+  label
+    rel()
+    font-weight normal
+    
+    &:before
+      content ''
+      display block
+      width 20px
+      height 20px
+      background-color $darker-grey
+      position absolute
+      top 1px
+      left -40px
+      transition( all 0.5s ease )
+      border-radius 3px
+    
+    &:after
+      content ''
+      display block
+      border-left 3px solid $darker-grey
+      border-bottom 3px solid transparent
+      border-radius 2px
+      height 9px
+      width 14px
+      transform rotate(-45deg)
+      position absolute
+      top 5px
+      left -37px
+      transition( all 0.2s ease 0.15s )
+  
+  input[ type="checkbox" ]:checked + label
+    color $brand-color
+    
+    &:before
+      background-color $brand-color
+    
+    &:after
+      border-bottom-color $darker-grey
+    
+  input[ type="checkbox" ]
+    display none

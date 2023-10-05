@@ -1,0 +1,1 @@
+!function(a){"use strict";a(function(){a(window).scroll(function(){var b=a(document).scrollTop()+parseInt(window.screen.height)-350;a(".b-blog-list .row").each(function(){a(this).offset().top<b&&a(this).addClass("i-animate")})}).scroll()})}(jQuery);

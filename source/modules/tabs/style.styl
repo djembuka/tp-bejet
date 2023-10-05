@@ -1,0 +1,66 @@
+@import '../../styl/component-include.styl'
+
+.b-tabs
+  font-size 11pt
+
+  /*.i-new-win
+    float right
+    ib()
+    padding-top 16px
+    padding-bottom 16px
+    
+    @media( max-width: 530px)
+      float none
+      display block
+      text-align center
+      background-position 20% center
+      padding-left 0*/
+  
+  &__nav
+    margin 0
+    border-bottom 3px solid $dark-grey
+    position relative
+    
+    @media( max-width: 530px)
+      border-bottom none
+    
+  &__decor
+    position absolute
+    bottom -3px
+    left 0
+    height 3px
+    width 180px
+    background-color $brand-color
+    transition( all 0.3s ease )
+    
+    @media( max-width: 530px)
+      display none
+    
+  &__tab
+    ib()
+    padding 16px 56px
+    margin-right -4px
+    
+    @media( max-width: 750px)
+      padding-right 30px
+      padding-left 30px
+    
+    @media( max-width: 530px)
+      display block
+      text-align center
+      border-bottom 1px solid $dark-grey
+    
+    &.i-active
+      color: $brand-color
+    
+    a&:hover
+      text-decoration none
+      
+  &__i
+    opacity(0)
+    transition( opacity 1s ease )
+    display none
+    
+    &.i-active
+      opacity(1)
+      display block

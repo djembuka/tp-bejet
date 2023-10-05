@@ -1,0 +1,213 @@
+@import '../../styl/component-include.styl'
+
+.b-subscription
+  height 400px
+  transition( all 0.5s ease )
+  line-height 1.7
+  
+  p,
+  h3
+    text-align center
+    
+  h2
+    font-size 13.5pt
+    font-weight bold
+    margin 30px 0 15px
+    
+  p
+    margin 15px 0
+    
+    &:first-child
+      margin-top 0
+  
+  .b-form-field
+  
+    @media ( min-width: $content-width1 )
+      width 520px
+      margin 0 auto
+    
+  form
+    display block
+    
+  .b-message
+    display none
+    
+  &.i-success,
+  &.i-error
+    padding-top 60px
+    transform scale(1)
+    opacity 1
+    
+    form
+      display none
+      
+    .b-message
+      display block
+      
+  &.i-fadeout
+    transform scale(0.5)
+    opacity 0
+    
+  &.i-white
+    color #333
+    
+    a
+      color #333
+      
+  fieldset
+    border none
+    padding 60px 40px
+    border-radius( 3px )
+    transition( margin-top 0.7s ease )
+    
+    @media ( max-width: $media-width1 )
+      margin 0 -20px
+      padding-right 20px
+      padding-left 20px
+    
+    &.i-move
+      margin-top 0
+      
+    h2
+      text-align center
+      margin-top 0
+      
+    p
+      text-align center
+      font-size 9pt
+      
+  &.i-white fieldset
+    background-color #f2f2f2
+    color #333
+      
+  .b-form
+    
+    &-field
+      margin-bottom 0
+      rel()
+        
+      .b-asterisk
+        position absolute
+        bottom 5px
+        right 22px
+        font-size 19pt
+    
+      &.i-warning .b-asterisk
+        color $warning-color
+
+    &-submit
+      text-align center
+      
+      &.i-error
+        background #aa4242
+        color #fff
+        
+      
+  .b-input-text
+    border none
+    border-radius( 2px )
+    box-sizing( border-box )
+    padding 0 45px 0 5%
+    height 60px
+    width 520px
+    display block
+    
+    @media ( max-width: $media-width1 )
+      width 100%
+      
+    &:focus
+      outline none
+          
+  .i-warning .b-input-text
+    color $warning-color
+        
+  .i-white .b-input-text
+    background-color #fff
+    color #333
+      
+  .b-label
+    display block
+    margin-bottom 5px
+    font-size 10.5pt
+    font-weight bold
+    padding-left 5%
+      
+  &.i-white .b-label
+    color #333
+  
+  .i-warning .b-label
+    color $warning-color
+      
+  .i-float
+
+    .b-label
+      transform( translateY( 45px ))
+      cursor text
+      transition( all 0.3s ease )
+      
+    &.i-focus
+      
+      .b-label
+        transform( translateY( -5px ))
+        
+  .b-button,
+  a.b-button,
+  input[ type="submit" ]
+    border none
+    color #fff
+    font-size 10.5pt
+    font-weight bold
+    text-transform uppercase
+    text-align center
+    display inline-block
+    vertical-align top
+    padding 0 28px
+    line-height 50px
+    border-radius( 3px )
+    background-color $dark-grey
+    transition( all 0.3s ease )
+    box-sizing( border-box )
+    white-space nowrap
+    min-width 225px
+    
+    &:hover
+      background-color $brand-color
+      text-decoration none
+      color #fff
+      
+    &:active
+      background-color #87af15
+      
+      
+    &.i-scheme-2
+      background-color $brand-color
+    
+      &:hover
+        background-color $button-scheme-2
+        
+      &:active
+        background-color $button-scheme-2-hover
+
+  input[ type="submit" ]
+    background-color $brand-color
+
+    &:hover
+      background-color $button-scheme-2
+      
+    &:active
+      background-color $button-scheme-2-hover
+      
+  hr
+    border 0
+    height 1px
+    padding 0
+    margin 10px 0
+    
+    &.i-size-XL
+      margin 60px 0
+    
+    &.i-size-L
+      margin 20px 0
+    
+    &.i-size-M
+      margin 15px 0

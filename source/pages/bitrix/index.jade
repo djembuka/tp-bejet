@@ -1,0 +1,26 @@
+﻿extends ../../layouts/main.jade
+
+block top-banner
+  include ../../modules/top-banner/solution.jade
+
+block content
+
+  .b-tabs.i-links
+  
+    .b-container
+    
+      include ../../modules/tabs/bitrix.jade
+      
+      hr.i-size-L
+            
+      .b-tabs__i.i-active( data-tab="license" )
+        include ../../components/faq/bitrix
+            
+      .b-tabs__i data-tab="prolongation" )
+        h3 Продления
+            
+      .b-tabs__i data-tab="conversion" )
+        h3 Переходы
+            
+      .b-tabs__i data-tab="extra" )
+        h3 Дополнительные сайты

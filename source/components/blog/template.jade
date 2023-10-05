@@ -1,0 +1,28 @@
+﻿// start /components/blog/
+
+link( rel="stylesheet", href="/components/blog/style.css" )
+script( src="/components/blog/script.js" )
+
+h1 Блог Bejet
+p Анонсы тиражных решений и полезных инструментов для владельцев веб-сайтов.
+    
+hr
+
+h2 Актуальные новости
+hr
+include items
+
+hr  
+
+h2 Статья    
+hr    
+include items
+
+hr.i-size-L
+include ../../modules/pagination/include
+
+hr.i-size-XL
+
+include ../../components/subscription/template.jade
+
+// end /components/blog/
